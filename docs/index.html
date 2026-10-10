@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>HAT-SIM – studie vnímání dynamických textur / dynamic texture study</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header id="topbar">
+  <div id="brand" data-i18n="brand">Studie vnímání dynamických textur</div>
+  <div id="progress-wrap" class="hidden">
+    <div id="progress-text"></div>
+    <div id="progress-bar"><div id="progress-fill"></div></div>
+  </div>
+  <div id="lang-switch">
+    <button type="button" data-lang="cs" class="lang-btn">CZ</button>
+    <button type="button" data-lang="en" class="lang-btn">EN</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- (0) loading / error -->
+  <section id="screen-loading" class="screen">
+    <p data-i18n="loading">Načítání…</p>
+  </section>
+
+  <!-- (a) informed consent -->
+  <section id="screen-consent" class="screen hidden">
+    <div id="consent-text" class="doc"></div>
+    <div class="form-row">
+      <label><input type="checkbox" id="consent-check"> <span data-i18n="consent_agree">Přečetl/a jsem informace a souhlasím s účastí ve studii.</span></label>
+    </div>
+    <div class="btn-row">
+      <button type="button" id="btn-consent" class="primary" disabled data-i18n="continue">Pokračovat</button>
+    </div>
+  </section>
+
+  <!-- (b) demographics -->
+  <section id="screen-demo" class="screen hidden">
+    <h2 data-i18n="demo_title">Několik údajů o vás</h2>
+    <p data-i18n="demo_note">Údaje jsou anonymní a slouží jen k popisu vzorku pozorovatelů.</p>
+    <div class="form-row">
+      <label for="demo-age" data-i18n="demo_age">Věková kategorie</label>
+      <select id="demo-age">
+        <option value="" data-i18n="select_placeholder">– vyberte –</option>
+        <option value="18-24">18–24</option>
+        <option value="25-34">25–34</option>
+        <option value="35-44">35–44</option>
+        <option value="45-54">45–54</option>
+        <option value="55-64">55–64</option>
+        <option value="65+">65+</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label for="demo-vision" data-i18n="demo_vision">Zrak</label>
+      <select id="demo-vision">
+        <option value="" data-i18n="select_placeholder">– vyberte –</option>
+        <option value="normal" data-i18n="vision_normal">normální bez korekce</option>
+        <option value="corrected" data-i18n="vision_corrected">korigovaný (brýle / čočky), nyní s korekcí</option>
+        <option value="uncorrected" data-i18n="vision_uncorrected">vada zraku, nyní bez korekce</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label for="demo-lang" data-i18n="demo_lang">Preferovaný jazyk</label>
+      <select id="demo-lang">
+        <option value="cs">čeština</option>
+        <option value="en">English</option>
+        <option value="other" data-i18n="lang_other">jiný</option>
+      </select>
+    </div>
+    <div class="form-row">
+      <label for="observer-code" data-i18n="observer_code_label">Kód pozorovatele (volitelné – vyplňte jen při druhém sezení z jiného prohlížeče)</label>
+      <input type="text" id="observer-code" maxlength="32" autocomplete="off" spellcheck="false" placeholder="obs_…">
+      <span class="muted" id="observer-code-hint"></span>
+    </div>
+    <div class="btn-row">
+      <button type="button" id="btn-demo" class="primary" data-i18n="continue">Pokračovat</button>
+    </div>
+  </section>
+
+  <!-- (c) instructions -->
+  <section id="screen-instr" class="screen hidden">
+    <h2 data-i18n="instr_title">Instrukce</h2>
+    <div id="instr-text" class="doc"></div>
+    <div class="btn-row">
+      <button type="button" id="btn-fullscreen" data-i18n="fullscreen">Celá obrazovka (doporučeno)</button>
+      <button type="button" id="btn-practice" class="primary" data-i18n="start_practice">Začít cvičné trialy</button>
+    </div>
+  </section>
+
+  <!-- (c2) practice -> main transition -->
+  <section id="screen-practice-done" class="screen hidden">
+    <h2 data-i18n="practice_done_title">Cvičení dokončeno</h2>
+    <p data-i18n="practice_done_text">Cvičné trialy se nezapočítávají. Nyní začne vlastní sezení (60 trialů, přibližně 12–15 minut). Po 30 trialech bude krátká přestávka.</p>
+    <div class="btn-row">
+      <button type="button" id="btn-start-main" class="primary" data-i18n="start_main">Začít sezení</button>
+    </div>
+  </section>
+
+  <!-- (d) trial -->
+  <section id="screen-trial" class="screen hidden">
+    <div id="question" data-i18n="question">Který z dolních klipů je celkovým dynamickým vizuálním charakterem podobnější hornímu?</div>
+    <div id="stage">
+      <div id="anchor-slot" class="slot">
+        <div class="slot-label" data-i18n="anchor_label">Horní (vzor)</div>
+        <div class="vid-box" id="box-anchor"></div>
+      </div>
+      <div id="cand-row">
+        <div id="left-slot" class="slot">
+          <div class="slot-label" data-i18n="left_label">Levý</div>
+          <div class="vid-box" id="box-left"></div>
+        </div>
+        <div id="right-slot" class="slot">
+          <div class="slot-label" data-i18n="right_label">Pravý</div>
+          <div class="vid-box" id="box-right"></div>
+        </div>
+      </div>
+    </div>
+    <div id="resp-row">
+      <button type="button" class="resp" id="btn-left" disabled>← <span data-i18n="resp_left">Levý</span></button>
+      <button type="button" class="resp undecided" id="btn-undecided" disabled><span data-i18n="resp_undecided">Nelze rozhodnout</span> <small>(<span data-i18n="space">mezerník</span>)</small></button>
+      <button type="button" class="resp" id="btn-right" disabled><span data-i18n="resp_right">Pravý</span> →</button>
+    </div>
+    <div id="trial-status"></div>
+  </section>
+
+  <!-- break -->
+  <section id="screen-break" class="screen hidden">
+    <h2 data-i18n="break_title">Přestávka</h2>
+    <p data-i18n="break_text">Máte za sebou polovinu sezení. Dejte očím chvíli odpočinout; pokračujte, až budete připraveni.</p>
+    <div class="btn-row">
+      <button type="button" id="btn-break" class="primary" data-i18n="continue">Pokračovat</button>
+    </div>
+  </section>
+
+  <!-- (e) end + debrief -->
+  <section id="screen-end" class="screen hidden">
+    <h2 data-i18n="end_title">Děkujeme!</h2>
+    <p><span data-i18n="completion_code">Váš kód dokončení:</span> <code id="completion-code">—</code></p>
+    <p><span data-i18n="observer_code_end">Váš kód pozorovatele (pro případné druhé sezení z jiného prohlížeče):</span> <code id="observer-code-end">—</code></p>
+    <p id="end-note" class="muted"></p>
+    <div id="debrief-text" class="doc"></div>
+    <div class="btn-row">
+      <button type="button" id="btn-second" class="hidden" data-i18n="second_session">Absolvovat druhé sezení</button>
+    </div>
+  </section>
+
+  <!-- generic blocking message -->
+  <section id="screen-message" class="screen hidden">
+    <h2 id="message-title"></h2>
+    <p id="message-text"></p>
+    <div class="btn-row"><button type="button" id="btn-message-ok" class="primary hidden" data-i18n="continue">Pokračovat</button></div>
+  </section>
+</main>
+
+<!-- overlays -->
+<div id="overlay-small" class="overlay hidden">
+  <div class="overlay-box">
+    <h3 data-i18n="small_title">Obrazovka je příliš malá</h3>
+    <p data-i18n="small_text">Studie vyžaduje šířku okna alespoň 900 px. Zvětšete okno prohlížeče, použijte celou obrazovku nebo jiné zařízení. Můžete pokračovat i tak, ale vaše data mohou být vyřazena.</p>
+    <div class="btn-row">
+      <button type="button" id="btn-small-fullscreen" data-i18n="fullscreen">Celá obrazovka (doporučeno)</button>
+      <button type="button" id="btn-small-continue" data-i18n="continue_anyway">Pokračovat i tak</button>
+    </div>
+  </div>
+</div>
+<div id="overlay-net" class="overlay hidden">
+  <div class="overlay-box">
+    <h3 data-i18n="net_title">Spojení se serverem bylo přerušeno</h3>
+    <p data-i18n="net_text">Vaše odpovědi jsou uloženy v prohlížeči a budou odeslány, jakmile se spojení obnoví. Nezavírejte prosím tuto stránku.</p>
+    <p id="net-detail" class="muted"></p>
+  </div>
+</div>
+
+<div id="hidden-pool" aria-hidden="true"></div>
+
+<script src="./config.js"></script>
+<script src="./i18n.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

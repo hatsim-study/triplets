@@ -1,0 +1,75 @@
+:root {
+  --bg: #1d1f24;
+  --fg: #e8e8ea;
+  --muted: #9a9ca3;
+  --accent: #4c8dff;
+  --accent2: #ffb14c;
+  --box: #2a2d34;
+  --border: #3a3e47;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--fg);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 16px; }
+body { min-height: 100vh; display: flex; flex-direction: column; }
+#topbar { display: flex; align-items: center; justify-content: space-between; padding: 8px 16px;
+  border-bottom: 1px solid var(--border); gap: 16px; }
+#brand { font-weight: 600; color: var(--muted); font-size: 14px; white-space: nowrap; }
+#lang-switch .lang-btn { background: transparent; color: var(--muted); border: 1px solid var(--border);
+  padding: 3px 8px; margin-left: 4px; cursor: pointer; border-radius: 4px; }
+#lang-switch .lang-btn.active { color: var(--fg); border-color: var(--accent); }
+#progress-wrap { flex: 1; max-width: 480px; display: flex; align-items: center; gap: 10px; }
+#progress-text { font-size: 13px; color: var(--muted); white-space: nowrap; }
+#progress-bar { flex: 1; height: 8px; background: var(--box); border-radius: 4px; overflow: hidden; }
+#progress-fill { height: 100%; width: 0; background: var(--accent); transition: width .3s; }
+#main { flex: 1; display: flex; justify-content: center; align-items: flex-start; padding: 16px; }
+.screen { width: 100%; max-width: 900px; }
+.screen.hidden, .hidden { display: none !important; }
+.doc { background: var(--box); border: 1px solid var(--border); border-radius: 8px; padding: 16px 24px;
+  max-height: 55vh; overflow-y: auto; line-height: 1.5; }
+.doc h1 { font-size: 1.4em; } .doc h2 { font-size: 1.2em; } .doc h3 { font-size: 1.05em; }
+.doc a { color: var(--accent); }
+.form-row { margin: 14px 0; display: flex; flex-direction: column; gap: 6px; }
+.form-row label { color: var(--fg); }
+select, input[type=text] { background: var(--box); color: var(--fg); border: 1px solid var(--border);
+  padding: 8px; border-radius: 6px; font-size: 15px; max-width: 420px; }
+.btn-row { display: flex; gap: 12px; margin-top: 18px; flex-wrap: wrap; }
+button { font-size: 15px; padding: 10px 18px; border-radius: 6px; border: 1px solid var(--border);
+  background: var(--box); color: var(--fg); cursor: pointer; }
+button.primary { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+button:disabled { opacity: .35; cursor: not-allowed; }
+.muted { color: var(--muted); font-size: 14px; }
+code { background: var(--box); padding: 3px 8px; border-radius: 4px; font-size: 1.2em; letter-spacing: 1px; }
+
+/* trial screen */
+#screen-trial { max-width: 1100px; display: flex; flex-direction: column; align-items: center; }
+#question { font-size: 18px; margin: 4px 0 12px; text-align: center; }
+#stage { display: flex; flex-direction: column; align-items: center; gap: 14px; }
+.slot { display: flex; flex-direction: column; align-items: center; gap: 4px; }
+.slot-label { font-size: 13px; color: var(--muted); }
+.vid-box { width: 352px; height: 288px; background: #000; border: 2px solid var(--border); border-radius: 4px;
+  overflow: hidden; position: relative; }
+.vid-box video { width: 100%; height: 100%; display: block; object-fit: fill; }
+#cand-row { display: flex; gap: 40px; }
+#left-slot .vid-box, #right-slot .vid-box { border-color: var(--border); }
+.vid-box.chosen { border-color: var(--accent2); }
+#resp-row { display: flex; gap: 20px; margin-top: 16px; }
+button.resp { min-width: 180px; font-size: 17px; padding: 12px 20px; }
+button.resp.undecided { min-width: 220px; font-size: 15px; }
+button.resp small { color: var(--muted); font-size: 11px; }
+#trial-status { margin-top: 10px; font-size: 13px; color: var(--muted); min-height: 18px; }
+
+/* scale videos on tall-but-narrow screens */
+@media (max-height: 760px) {
+  .vid-box { width: 308px; height: 252px; }
+}
+@media (min-height: 980px) and (min-width: 1300px) {
+  .vid-box { width: 440px; height: 360px; }
+}
+
+/* overlays */
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.75); display: flex; align-items: center;
+  justify-content: center; z-index: 50; }
+.overlay-box { background: var(--box); border: 1px solid var(--border); border-radius: 10px; padding: 24px;
+  max-width: 520px; }
+#hidden-pool { position: fixed; left: -4000px; top: 0; width: 1px; height: 1px; overflow: hidden; }
+#hidden-pool video { width: 352px; height: 288px; }
