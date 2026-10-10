@@ -1,7 +1,7 @@
 /* HAT-SIM triplet study – static deployment configuration (GitHub Pages + Google Apps Script). */
 window.HAT_CONFIG = {
   // URL of the deployed Apps Script web app (ends with /exec). For local tests: "http://127.0.0.1:8787/exec"
-  APPS_SCRIPT_URL: "http://127.0.0.1:8787/exec",
+  APPS_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbzdB_Vy3V9Lt9x7eKU4f2H0DBcnpol5GAViFK2JIXnCH55PSgCa1F_W5CpM7ynAZ-yKzQ/exec",
   // "pilot" -> only PILOT_* plans are requested; "main" -> R*/P* plans
   MODE: "pilot",
   // clip lookup: clips_index.json maps clip_id -> absolute URL; ids missing there use CLIPS_BASE + id + ".mp4"

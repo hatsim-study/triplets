@@ -1,5 +1,5 @@
 /**
- * HAT-SIM triplet study – Google Apps Script backend (web app bound to a Google Sheet).
+ * HAT-SIM triplet study – Google Apps Script backend (web app with a configured Google Sheet).
  *
  * Sheets (created by setupSheets() or on first use):
  *   plans       plan_id, round, panel, n_trials, mode              – registered plan index (from plan_index.csv)
@@ -40,7 +40,11 @@ var HEADERS = {
 };
 
 // ---------------------------------------------------------------- helpers
-function ss_() { return SpreadsheetApp.getActiveSpreadsheet(); }
+function ss_() {
+  var id = PropertiesService.getScriptProperties().getProperty('SPREADSHEET_ID');
+  if (!id) { throw new Error('Missing SPREADSHEET_ID script property'); }
+  return SpreadsheetApp.openById(id);
+}
 
 function sheet_(name) {
   var ss = ss_();

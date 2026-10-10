@@ -9,7 +9,7 @@ Static study application prepared by Claude, hosted in the separate `hatsim-stud
 
 ## Deployment status
 
-This is the initial infrastructure deployment. `docs/config.js` still contains the original local test backend (`http://127.0.0.1:8787/exec`), `MODE: "pilot"`, and a placeholder consent version. Response collection has not been enabled or tested against a deployed Google backend. Participant information and consent documents contain fields awaiting completion. Do not recruit participants using this deployment yet.
+The Google Apps Script backend is deployed and configured in `docs/config.js` (2026-10-10). All 213 plans are registered. A synthetic API smoke test verified pilot-plan assignment, response recording, duplicate suppression, session closure, and token-protected export; the synthetic rows were archived locally and removed from the collection sheet. `MODE: "pilot"` and the placeholder consent version remain. Participant information and consent documents contain fields awaiting completion. A complete human pilot session is still pending; do not recruit participants using this deployment yet.
 
 The original application and study plans are preserved. No participant responses are included. `README_static.md` is the inherited technical guide; some names and paths there describe the earlier package layout. The current repository and website addresses above are authoritative.
 

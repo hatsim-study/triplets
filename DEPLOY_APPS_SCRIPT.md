@@ -1,15 +1,15 @@
 # Nasazení Google Apps Script backendu (klikací postup)
 
-Backend je jeden soubor `apps_script/Code.gs` vázaný na Google tabulku. Drží jen počitadla použití plánů a záznamy (trialy, sezení, cvičení). Žádné IP adresy, e-maily ani Google účty pozorovatelů se neukládají.
+Backend je jeden soubor `apps_script/Code.gs`. Tabulku otevírá podle vlastnosti skriptu `SPREADSHEET_ID`, takže může běžet i v samostatném projektu Apps Script. Drží jen počitadla použití plánů a záznamy (trialy, sezení, cvičení). Žádné IP adresy, e-maily ani Google účty pozorovatelů se neukládají.
 
 ## 1. Nová tabulka a skript
 
 1. Na Google Drive: **Nový → Tabulky Google**, pojmenujte např. `HATSIM_triplets_data`.
-2. V tabulce: **Rozšíření → Apps Script** (otevře se editor s prázdným `Code.gs`).
+2. V tabulce: **Rozšíření → Apps Script**, nebo vytvořte samostatný projekt na `https://script.google.com/` pod účtem vlastníka tabulky.
 3. Smažte obsah editoru a vložte celý obsah souboru `apps_script/Code.gs`. Uložte (ikona diskety / Ctrl+S).
-4. Nastavte administrátorský token: v levém menu **Nastavení projektu (ozubené kolo) → Vlastnosti skriptu → Přidat vlastnost**: název `ADMIN_TOKEN`, hodnota = dlouhý náhodný řetězec (např. 32 znaků). Uložit.
+4. V **Nastavení projektu (ozubené kolo) → Vlastnosti skriptu** uložte dvě vlastnosti: `SPREADSHEET_ID` = ID tabulky mezi `/d/` a `/edit` v její adrese; `ADMIN_TOKEN` = dlouhý náhodný řetězec (např. 32 náhodných bajtů v hexadecimálním zápisu). Token nevkládejte do veřejného repozitáře ani do `docs/config.js`.
    *(Bez tokenu je export a registrace plánů vypnutá – `CHANGE_ME`.)*
-5. (Volitelné) V editoru vyberte funkci `setupSheets` a klikněte **Spustit** → potvrďte oprávnění (skript smí upravovat tuto tabulku). Vytvoří listy `plans`, `plan_usage`, `sessions`, `trials`, `practice` s hlavičkami. Listy se jinak vytvoří samy při prvním použití.
+5. (Volitelné) V editoru vyberte funkci `setupSheets` a klikněte **Spustit** → potvrďte oprávnění. Google uděluje širší oprávnění k Tabulkám; tento kód otevírá pouze ID nastavené v `SPREADSHEET_ID`. Vytvoří listy `plans`, `plan_usage`, `sessions`, `trials`, `practice` s hlavičkami. Listy se jinak vytvoří samy při prvním použití.
 
 ## 2. Nasazení jako webová aplikace
 
