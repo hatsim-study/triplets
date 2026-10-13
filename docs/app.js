@@ -17,10 +17,25 @@
 
   // ------------------------------------------------------------------ utils
   function $(id) { return document.getElementById(id); }
+  // Session-size tokens: texts (i18n + texts/*.md) use {{N_TRIALS}}, {{DURATION}}, {{BREAK_SENTENCE}}.
+  // Values come from the assigned plan when known, otherwise from the mode (pilot plans = 20 trials, main = 60).
+  function sessionVars() {
+    var n = (S.plan && S.plan.trials) ? S.plan.trials.length : (C.MODE === "pilot" ? 20 : 60);
+    var hasBreak = C.BREAK_AFTER > 0 && n > C.BREAK_AFTER;
+    var cs = S.lang !== "en";
+    var dur = n <= 25 ? (cs ? "4–6 minut" : "4–6 minutes") : (cs ? "12–15 minut" : "12–15 minutes");
+    var brk = hasBreak ? (cs ? "Po " + C.BREAK_AFTER + " úlohách je zařazena přestávka." : "A break is scheduled after " + C.BREAK_AFTER + " trials.")
+                       : (cs ? "Sezení je krátké, bez přestávky." : "The session is short, without a break.");
+    return { N_TRIALS: String(n), DURATION: dur, BREAK_SENTENCE: brk };
+  }
+  function fillSession(s) {
+    var v = sessionVars();
+    return s.replace(/\{\{N_TRIALS\}\}/g, v.N_TRIALS).replace(/\{\{DURATION\}\}/g, v.DURATION).replace(/\{\{BREAK_SENTENCE\}\}/g, v.BREAK_SENTENCE);
+  }
   function t(key, vars) {
     var s = (window.I18N[S.lang] && window.I18N[S.lang][key]) || window.I18N.cs[key] || key;
     if (vars) { Object.keys(vars).forEach(function (k) { s = s.replace("{" + k + "}", vars[k]); }); }
-    return s;
+    return fillSession(s);
   }
   function show(id) {
     var all = document.querySelectorAll(".screen");
@@ -157,7 +172,7 @@
   function loadDoc(name, elId) {
     fetch("./texts/" + name + "_" + S.lang + ".md", { cache: "no-store" }).then(function (r) {
       return r.ok ? r.text() : fetch("./texts/" + name + "_cs.md").then(function (r2) { return r2.ok ? r2.text() : "(" + name + ")"; });
-    }).then(function (md) { $(elId).innerHTML = mdToHtml(md); }).catch(function () { $(elId).textContent = "(" + name + ")"; });
+    }).then(function (md) { $(elId).innerHTML = mdToHtml(fillSession(md)); }).catch(function () { $(elId).textContent = "(" + name + ")"; });
   }
 
   // ----------------------------------------------------- screen checks
@@ -362,7 +377,7 @@
       return flushQueue();
     }).then(function () {
       $("completion-code").textContent = S.completion_code;
-      $("end-note").textContent = "";
+      $("end-note").textContent = t("end_done");
       if (S.session_number < C.MAX_SESSIONS && C.MODE !== "pilot") { $("btn-second").classList.remove("hidden"); }
       saveLocal();
     });
@@ -387,6 +402,7 @@
       if (!plan) { fatal("error_title", "error_text"); return null; }
       S.plan = plan; S.plan_id = d.plan_id; S.round = d.round || plan.round; S.session_id = d.session_id;
       S.session_number = d.session_number || S.session_number; S.nTarget = plan.trials.length;
+      $("instr-text").innerHTML = t("instr_html"); loadDoc("consent", "consent-text"); loadDoc("debrief", "debrief-text");   // refresh session-size tokens
       S.resumed = !!d.resumed; S.next_index = 0; S.start_ts = null;
       saveLocal();
       return d;

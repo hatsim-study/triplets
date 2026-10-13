@@ -15,7 +15,7 @@ The study investigates how people perceive the similarity of short videos of nat
 ## 2. Procedure
 
 - Participation takes place online in a web browser on a desktop or laptop computer (not on a mobile phone).
-- One session takes approximately 12–15 minutes and consists of 60 short trials. A break is scheduled halfway through.
+- One session takes approximately {{DURATION}} and consists of {{N_TRIALS}} short trials. {{BREAK_SENTENCE}}
 - In each trial you will see three short looping videos: one at the top and two at the bottom. Your task is to choose which of the two lower videos is more similar to the upper one in its overall dynamic visual character. You may also answer "cannot decide".
 - At the start you will provide three short items: an age band, whether you use vision correction (glasses/contact lenses), and the interface language.
 - If you wish, you may take part in at most two sessions.

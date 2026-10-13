@@ -73,3 +73,5 @@ button.resp small { color: var(--muted); font-size: 11px; }
   max-width: 520px; }
 #hidden-pool { position: fixed; left: -4000px; top: 0; width: 1px; height: 1px; overflow: hidden; }
 #hidden-pool video { width: 352px; height: 288px; }
+
+.note-strong { font-weight: 600; margin: 0.6em 0 1em; padding: 0.6em 0.8em; border-left: 4px solid #2a7; background: #eefaf3; }

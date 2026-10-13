@@ -15,7 +15,7 @@ Studie zkoumá, jak lidé vnímají podobnost krátkých videí přírodních sc
 ## 2. Průběh
 
 - Účast probíhá online ve webovém prohlížeči na počítači (nikoli na mobilním telefonu).
-- Jedno sezení trvá přibližně 12–15 minut a skládá se z 60 krátkých úloh. V polovině je zařazena přestávka.
+- Jedno sezení trvá přibližně {{DURATION}} a skládá se z {{N_TRIALS}} krátkých úloh. {{BREAK_SENTENCE}}
 - V každé úloze uvidíte tři krátká videa přehrávaná ve smyčce: jedno nahoře a dvě dole. Vaším úkolem je zvolit, které z dolních videí je celkovým dynamickým vizuálním charakterem podobnější hornímu. Můžete také zvolit odpověď „nelze rozhodnout“.
 - Na začátku vyplníte tři krátké údaje: věkovou kategorii, zda používáte korekci zraku (brýle/čočky) a jazyk rozhraní.
 - Pokud chcete, můžete se zúčastnit nejvýše dvou sezení.

@@ -43,8 +43,8 @@ Recommendation: let the videos run through at least once (a few seconds) and the
 
 ## 4. Course of the session
 
-- A session has **60 trials**. The counter at the top shows how many remain.
-- **After 30 trials** a break screen appears. Rest for as long as you need and continue with the "Continue" button.
+- A session has **{{N_TRIALS}} trials**. The counter at the top shows how many remain.
+- {{BREAK_SENTENCE}}
 - Some triplets are **repeated** during the session, possibly with the sides swapped. This is intentional. Do not try to remember what you answered before; always answer according to your current impression.
 - For some triplets the answer will seem **obvious**. These triplets are part of the task too; answer them in the same way as the others.
 - Individual trials have no time limit. If you need to stop, close the window; an unfinished session is not counted and you may start a new one (at most two sessions in total).
@@ -59,4 +59,5 @@ Before the session starts you will see one or two practice triplets. They are on
 1. Watch all three videos.
 2. Ask yourself: *Which of the two lower clips is more similar to the upper one in its overall dynamic visual character?*
 3. Press ← or →. Press ↓ only when you are genuinely undecided.
-4. Break after 30 trials; 60 trials in total.
+4. {{BREAK_SENTENCE}} {{N_TRIALS}} trials in total.
+5. After the last trial a thank-you screen with your completion code appears — that is the end of the session; you can close the window.

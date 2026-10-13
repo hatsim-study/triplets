@@ -29,12 +29,12 @@ window.I18N = {
       "<li>Pokud opravdu nedokážete rozhodnout, stiskněte <b>mezerník</b> („nelze rozhodnout“). Používejte to prosím jen výjimečně.</li>" +
       "<li>Odpovědět lze až po alespoň 2 sekundách přehrávání – tlačítka se do té doby neaktivují.</li>" +
       "<li>Není žádná správná ani špatná odpověď; zajímá nás váš dojem. Odpovídejte podle svého prvního úsudku, ale neukvapeně.</li>" +
-      "<li>Sezení má 60 kroků (asi 12–15 minut) a uprostřed krátkou přestávku. Některé trojice se mohou opakovat.</li></ul>" +
+      "<li>Sezení má {{N_TRIALS}} kroků (asi {{DURATION}}). {{BREAK_SENTENCE}} Některé trojice se mohou opakovat.</li></ul>" +
       "<p>Doporučujeme přepnout prohlížeč do režimu celé obrazovky a sedět v obvyklé vzdálenosti od monitoru. Nejprve si úlohu vyzkoušíte na 3 cvičných krocích, které se nezapočítávají.</p>",
     fullscreen: "Celá obrazovka (doporučeno)",
     start_practice: "Začít cvičné trialy",
     practice_done_title: "Cvičení dokončeno",
-    practice_done_text: "Cvičné trialy se nezapočítávají. Nyní začne vlastní sezení (60 trialů, přibližně 12–15 minut). Po 30 trialech bude krátká přestávka.",
+    practice_done_text: "Cvičné trialy se nezapočítávají. Nyní začne vlastní sezení ({{N_TRIALS}} trialů, přibližně {{DURATION}}). {{BREAK_SENTENCE}}",
     start_main: "Začít sezení",
     question: "Který z dolních klipů je celkovým dynamickým vizuálním charakterem podobnější hornímu?",
     anchor_label: "Horní (vzor)",
@@ -56,6 +56,7 @@ window.I18N = {
     completion_code: "Váš kód dokončení:",
     end_incomplete: "Sezení nebylo dokončeno celé; kód dokončení není k dispozici.",
     end_pending: "Odesílají se poslední odpovědi… kód se zobrazí za okamžik.",
+    end_done: "Sezení je dokončené a všechny odpovědi jsou uložené. Nic dalšího není potřeba — toto okno můžete zavřít. Kód si prosím poznamenejte; slouží jen k případnému odvolání vašich dat.",
     second_session: "Absolvovat druhé sezení (později)",
     small_title: "Obrazovka je příliš malá",
     small_text: "Studie vyžaduje šířku okna alespoň 900 px. Zvětšete okno prohlížeče, použijte celou obrazovku nebo jiné zařízení. Můžete pokračovat i tak, ale vaše data mohou být vyřazena.",
@@ -104,12 +105,12 @@ window.I18N = {
       "<li>If you really cannot decide, press the <b>space bar</b> (“cannot decide”). Please use it only exceptionally.</li>" +
       "<li>You can answer only after at least 2 seconds of playback – the buttons are inactive until then.</li>" +
       "<li>There is no right or wrong answer; we are interested in your impression. Follow your first judgement, but do not rush.</li>" +
-      "<li>A session has 60 steps (about 12–15 minutes) with a short break in the middle. Some triplets may repeat.</li></ul>" +
+      "<li>A session has {{N_TRIALS}} steps (about {{DURATION}}). {{BREAK_SENTENCE}} Some triplets may repeat.</li></ul>" +
       "<p>We recommend switching the browser to full screen and sitting at your usual distance from the monitor. You will first try the task on 3 practice steps that do not count.</p>",
     fullscreen: "Full screen (recommended)",
     start_practice: "Start practice trials",
     practice_done_title: "Practice finished",
-    practice_done_text: "Practice trials do not count. The actual session (60 trials, about 12–15 minutes) starts now. There will be a short break after 30 trials.",
+    practice_done_text: "Practice trials do not count. The actual session ({{N_TRIALS}} trials, about {{DURATION}}) starts now. {{BREAK_SENTENCE}}",
     start_main: "Start session",
     question: "Which of the two lower clips is more similar to the upper one in its overall dynamic visual character?",
     anchor_label: "Upper (reference)",
@@ -131,6 +132,7 @@ window.I18N = {
     completion_code: "Your completion code:",
     end_incomplete: "The session was not fully completed; no completion code is available.",
     end_pending: "Sending the last responses… the code will appear in a moment.",
+    end_done: "The session is complete and all responses have been saved. Nothing else is needed — you can close this window. Please note the code; it is only used if you later wish to withdraw your data.",
     second_session: "Do a second session (later)",
     small_title: "Screen too small",
     small_text: "The study requires a window at least 900 px wide. Enlarge the browser window, use full screen or another device. You may continue anyway, but your data may be excluded.",

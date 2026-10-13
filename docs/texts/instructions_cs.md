@@ -43,8 +43,8 @@ Doporučení: nechte videa proběhnout alespoň jednou dokola (zhruba několik s
 
 ## 4. Průběh sezení
 
-- Sezení má **60 úloh**. Počítadlo v horní části ukazuje, kolik jich zbývá.
-- **Po 30 úlohách** se zobrazí přestávka. Odpočiňte si, jak dlouho potřebujete, a pokračujte tlačítkem „Pokračovat“.
+- Sezení má **{{N_TRIALS}} úloh**. Počítadlo v horní části ukazuje, kolik jich zbývá.
+- {{BREAK_SENTENCE}}
 - Některé trojice se v průběhu sezení **zopakují**, případně s prohozenými stranami. Je to záměr. Nesnažte se vzpomenout, co jste odpověděl(a) minule; odpovídejte vždy podle aktuálního dojmu.
 - U některých trojic se Vám bude odpověď zdát **zjevná**. I tyto trojice jsou součástí úlohy; odpovězte na ně stejně jako na ostatní.
 - Jednotlivé úlohy nemají časový limit. Pokud potřebujete sezení přerušit, zavřete okno; nedokončené sezení se nezapočítává a můžete začít nové (celkem nejvýše dvě sezení).
@@ -59,4 +59,5 @@ Před zahájením uvidíte jednu až dvě cvičné trojice. Slouží jen k vyzko
 1. Sledujte všechna tři videa.
 2. Zeptejte se sám/sama sebe: *Který z dolních klipů je celkovým dynamickým vizuálním charakterem podobnější hornímu?*
 3. Stiskněte ← nebo →. Jen při skutečné nerozhodnosti ↓.
-4. Po 30 úlohách přestávka; celkem 60 úloh.
+4. {{BREAK_SENTENCE}} Celkem {{N_TRIALS}} úloh.
+5. Po poslední úloze se zobrazí poděkování a kód dokončení — tím sezení končí, okno můžete zavřít.
