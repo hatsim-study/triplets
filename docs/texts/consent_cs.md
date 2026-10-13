@@ -28,7 +28,7 @@ Po dokončení sezení obdržíte **kód dokončení**. Pomocí tohoto kódu mů
 
 ## 4. Rizika a nepohodlí
 
-Studie nepřináší rizika nad rámec běžného sledování videa na počítači. Při delším soustředění se může dostavit únava očí; proto je zařazena přestávka a sezení lze kdykoli přerušit.
+Studie nepřináší rizika nad rámec běžného sledování videa na počítači. Při delším soustředění se může dostavit únava očí. Sezení lze kdykoli přerušit. {{BREAK_SENTENCE}}
 
 **Poznámka k fotosenzitivitě:** Videa neobsahují blikání ani záblesky, mohou však obsahovat rychlý pohyb (např. vlnící se voda, listí ve větru, projíždějící vozidla). Pokud trpíte fotosenzitivní epilepsií nebo máte nepříjemné pocity při sledování rychle se pohybujících obrazů, doporučujeme se studie neúčastnit.
 

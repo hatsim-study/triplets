@@ -28,7 +28,7 @@ After completing a session you will receive a **completion code**. Using this co
 
 ## 4. Risks and discomfort
 
-The study carries no risks beyond those of ordinary video viewing on a computer. Prolonged concentration may cause mild eye fatigue; for this reason a break is scheduled and the session can be interrupted at any time.
+The study carries no risks beyond those of ordinary video viewing on a computer. Prolonged concentration may cause mild eye fatigue. The session can be interrupted at any time. {{BREAK_SENTENCE}}
 
 **Note on photosensitivity:** The videos contain no flicker or flashes, but they may contain fast motion (e.g. rippling water, leaves in wind, passing vehicles). If you have photosensitive epilepsy or find rapidly moving images uncomfortable, we recommend that you do not take part.
 
