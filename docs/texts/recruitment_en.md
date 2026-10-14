@@ -1,14 +1,14 @@
 # Recruitment Texts
 
-<!-- Version recruitment_en v1.0, 10 Oct 2026. Before sending, insert the link, contact, compensation information and the ethics committee reference. The texts must not name the computational measures being compared or the expected outcome. -->
+<!-- Version recruitment_en v1.0, 10 Oct 2026. Before sending, insert the investigator's e-mail. The texts must not name the computational measures being compared or the expected outcome. -->
 
 ## A. Recruitment e-mail
 
 **Subject:** Online study on perceived video similarity (15 minutes) — participants wanted
 
-Dear colleagues, [TO BE COMPLETED BY AUTHORS: salutation by channel — students of …, members of the department of …],
+Dear colleagues, Dear colleagues and students,
 
-[TO BE COMPLETED BY AUTHORS: department, CTU in Prague] is running an online study on how people perceive the similarity of short videos of natural scenes and materials (water, vegetation, fire, fabrics and the like). Human judgements will be compared with computational measures of video similarity; the aim is to find out how well such measures correspond to human perception.
+CTU in Prague is running an online study on how people perceive the similarity of short videos of natural scenes and materials (water, vegetation, fire, fabrics and the like). Human judgements will be compared with computational measures of video similarity; the aim is to find out how well such measures correspond to human perception.
 
 **What participation involves**
 
@@ -26,15 +26,15 @@ The videos contain no flicker, but they may contain fast natural motion; we do n
 
 **Anonymity.** We do not record your name, e-mail or IP address. Only your choices, response times, technical playback information and three descriptive items (age band, vision correction, language) are stored. Anonymous data will be published together with the scientific publication. Details are given in the informed consent form at the start of the study.
 
-**Compensation:** [TO BE COMPLETED BY AUTHORS: none / … credit(s) per session upon entering the completion code in …]
+**Compensation:** none
 
-**Study link:** [TO BE COMPLETED BY AUTHORS: URL]
+**Study link:** https://hatsim-study.github.io/triplets/
 
-The study has been reviewed by [TO BE COMPLETED BY AUTHORS: ethics committee …, ref. no. …, date …]. For questions, contact [TO BE COMPLETED BY AUTHORS: name, e-mail].
+The study has been reviewed by . For questions, contact Radek Richtr, richtrad@fit.cvut.cz.
 
 Thank you for your time.
 
-[TO BE COMPLETED BY AUTHORS: name and signature of the investigator, department]
+Radek Richtr, Faculty of Information Technology, CTU in Prague
 
 ---
 
@@ -43,13 +43,13 @@ Thank you for your time.
 **Participants wanted for an online study (15 min, from a computer).**
 We study how people perceive the similarity of short videos of natural scenes — water, grass, fire, fabrics — and how well a computer does the same. The task: 60 times, watch three short videos and choose which of the two lower ones is more similar in overall character to the upper one. No preparation, no right answers, anonymous (no name, e-mail or IP address).
 Eligibility: 18+, normal or corrected vision, a computer (not a phone), stable connection. The videos do not flicker but contain fast motion — please do not take part if you have photosensitive epilepsy.
-Compensation: [TO BE COMPLETED BY AUTHORS].
-Link: [TO BE COMPLETED BY AUTHORS: URL] · Contact: [TO BE COMPLETED BY AUTHORS: e-mail] · [TO BE COMPLETED BY AUTHORS: department, CTU in Prague]; reviewed by the ethics committee [TO BE COMPLETED BY AUTHORS: ref. no.].
+Compensation: none.
+Link: https://hatsim-study.github.io/triplets/ · Contact: richtrad@fit.cvut.cz · CTU in Prague.
 
 ---
 
 ## C. Reminder (second wave, optional)
 
-**Subject:** Reminder: online study on perceived video similarity — [TO BE COMPLETED BY AUTHORS: number] sessions left before data collection closes
+**Subject:** Reminder: online study on perceived video similarity — … sessions left before data collection closes
 
-If you have already taken part, thank you — and a reminder that you may complete one more (second) session; please use the same browser or enter the completion code from your first session. If you have not yet taken part, data collection runs until [TO BE COMPLETED BY AUTHORS: date]. Link: [TO BE COMPLETED BY AUTHORS: URL].
+If you have already taken part, thank you — and a reminder that you may complete one more (second) session; please use the same browser or enter the completion code from your first session. If you have not yet taken part, data collection runs until 9 November 2026. Link: https://hatsim-study.github.io/triplets/.

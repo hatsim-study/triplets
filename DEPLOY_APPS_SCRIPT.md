@@ -34,12 +34,22 @@ Kontrola: `…/exec?action=status` → `plans_total: 213`.
 
 Stejně se později zaregistrují doplňkové plány (`plans_topup_index.csv`, viz README_static.md → Top-up).
 
+## 3b. Aktualizace na dvě studie (tráva) — 13. 10. 2026
+
+Pokud už skript běží (pilot smíšené studie), přidání travní studie je **nová verze téže webové aplikace** — URL `…/exec` zůstává, `config.js` se nemění:
+
+1. V editoru Apps Script nahraďte obsah `Code.gs` novým souborem `apps_script/Code.gs` (přidává parametr `study`, oddělená počitadla, sloupce `study`/`study_part`). Uložit.
+2. **Nasadit → Spravovat nasazení → (tužka) → Verze: Nová verze → Nasadit.** Staré řádky v listech zůstávají; chybějící sloupce (`study`, `study_part`) skript doplní na konec hlaviček při prvním zápisu (nebo spusťte `setupSheets`).
+3. Zaregistrujte travní plány: `python register_plans.py --url <URL/exec> --token <ADMIN_TOKEN> --index docs/plans_grass.json` (nebo import `plan_index_grass.csv` do listu `plans`; hlavička `plan_id, round, panel, n_trials, mode, study`). Už registrované smíšené plány se přeskočí (idempotentní).
+4. Kontrola: `…/exec?action=status` → `plans_total: 367`, `studies.grass.plans: 154`; `…/exec?action=next_plan&observer_id=obs_test000000&mode=main&study=grass` vrátí plán `GR*`/`GP*` (testovací rezervace vyprší za 90 min, nebo ji ukončete POSTem `session_end` s `completed:false`).
+5. Nahrajte na GitHub Pages `docs/plans_grass.json`, `docs/clips_index_grass.json` a upravené `docs/*.js`, `index.html`, `style.css`, `texts/instructions_*.md`.
+
 ## 4. Chování API (pro kontrolu)
 
 | volání | odpověď |
 |---|---|
-| `GET …/exec?action=next_plan&observer_id=obs_xxx&mode=main&session_number=1` | `{plan_id, round, session_id, resumed, session_number}` – nejméně použitý nedokončený plán; 2. sezení ze stejného kola; rezervace 90 min; `{error:"max_sessions"}` / `{error:"no_plan_available"}` |
-| `GET …/exec?action=status` | pokrytí: plány celkem / dokončené / rezervované, po kolech, počet řádků trialů, počet pozorovatelů |
+| `GET …/exec?action=next_plan&observer_id=obs_xxx&mode=main&study=mixed|grass&session_number=1` | `{plan_id, round, study, session_id, resumed, session_number}` – nejméně použitý nedokončený plán dané studie; 2. sezení ze stejného kola (per studie); max 2 sezení na studii; rezervace 90 min; `{error:"max_sessions"}` / `{error:"no_plan_available"}` |
+| `GET …/exec?action=status` | pokrytí: plány celkem / dokončené / rezervované, po studiích (`studies.mixed`, `studies.grass`) a po kolech, počet řádků trialů, počet pozorovatelů |
 | `GET …/exec?action=export&token=…` | JSON všech listů (`{plans, plan_usage, sessions, trials, practice, exported_utc}`) |
 | `POST …/exec` (Content-Type `text/plain`, tělo JSON) | `type: trial` (idempotentní na `session_id`+`trial_index`), `session_start`, `session_end` (uzavře rezervaci plánu jako `completed`/`abandoned`), `practice_trial`, `register_plans` (s tokenem) |
 

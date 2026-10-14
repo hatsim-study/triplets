@@ -4,12 +4,14 @@ Static study application prepared by Claude, hosted in the separate `hatsim-stud
 
 - Website: https://hatsim-study.github.io/triplets/
 - Frontend: `docs/`, published from `main` via GitHub Pages.
-- Video repositories: [clips-a](https://github.com/hatsim-study/clips-a), [clips-b](https://github.com/hatsim-study/clips-b), 243 clips each.
+- Video repositories: [clips-a](https://github.com/hatsim-study/clips-a), [clips-b](https://github.com/hatsim-study/clips-b), 243 clips each, and [clips-grass](https://github.com/hatsim-study/clips-grass), 73 grass/shrub clips.
 - Google backend: `apps_script/Code.gs`; instructions in `DEPLOY_APPS_SCRIPT.md`.
 
 ## Deployment status
 
-The Google Apps Script backend is deployed and configured in `docs/config.js` (2026-10-10). All 213 plans are registered. A synthetic API smoke test verified pilot-plan assignment, response recording, duplicate suppression, session closure, and token-protected export; the synthetic rows were archived locally and removed from the collection sheet. `MODE: "pilot"` and the placeholder consent version remain. Participant information and consent documents contain fields awaiting completion. A complete human pilot session is still pending; do not recruit participants using this deployment yet.
+The Google Apps Script backend supports both mixed scenes and grass, using the original `/exec` URL. The plan sets contain 213 mixed plans and 154 grass plans (367 total). `MODE: "pilot"` remains enabled; grass pilot sessions do not count toward main-study coverage. Consent version is `v1.1` (2026-10-14), including the corrected CTU data-protection contact and an accurate description of the hosting services.
+
+The mixed pilot has one recorded completed session with 20 responses. This deployment does not establish completion of a human grass pilot or of the study. Local mock simulations and technical checks are synthetic and must not be analysed as participant responses. Full human grass pilot review is still required before main collection.
 
 The original application and study plans are preserved. No participant responses are included. `README_static.md` is the inherited technical guide; some names and paths there describe the earlier package layout. The current repository and website addresses above are authoritative.
 

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>HAT-SIM – studie vnímání dynamických textur / dynamic texture study</title>
-<link rel="stylesheet" href="./style.css?v=20261013">
+<link rel="stylesheet" href="./style.css?v=20261014-grass">
 </head>
 <body>
 <header id="topbar">
@@ -81,6 +81,27 @@
     </div>
   </section>
 
+  <!-- (b2) study choice: grass / mixed scenes / both -->
+  <section id="screen-study" class="screen hidden">
+    <h2 data-i18n="study_title">Výběr studie</h2>
+    <p data-i18n="study_intro">Nabízíme dvě krátké studie se stejnou úlohou. Vyberte, čeho se chcete zúčastnit:</p>
+    <p id="study-pending-note" class="note-strong"></p>
+    <div class="study-grid">
+      <button type="button" class="study-opt" id="study-opt-grass" data-study="grass">
+        <span class="study-name" data-i18n="study_grass_name">Studie tráva</span>
+        <span class="study-desc" data-i18n="study_grass_desc">24–40 úloh, přibližně 4–8 minut.</span>
+      </button>
+      <button type="button" class="study-opt" id="study-opt-mixed" data-study="mixed">
+        <span class="study-name" data-i18n="study_mixed_name">Studie smíšené scény</span>
+        <span class="study-desc" data-i18n="study_mixed_desc">60 úloh, přibližně 12–15 minut.</span>
+      </button>
+      <button type="button" class="study-opt" id="study-opt-both" data-study="both">
+        <span class="study-name" data-i18n="study_both_name">Obojí</span>
+        <span class="study-desc" data-i18n="study_both_desc">Obě části po sobě.</span>
+      </button>
+    </div>
+  </section>
+
   <!-- (c) instructions -->
   <section id="screen-instr" class="screen hidden">
     <h2 data-i18n="instr_title">Instrukce</h2>
@@ -142,6 +163,15 @@
     <p><span data-i18n="completion_code">Váš kód dokončení:</span> <code id="completion-code">—</code></p>
     <p><span data-i18n="observer_code_end">Váš kód pozorovatele (pro případné druhé sezení z jiného prohlížeče):</span> <code id="observer-code-end">—</code></p>
     <p id="end-note" class="note-strong"></p>
+    <div id="second-part-box" class="hidden second-part">
+      <h3 data-i18n="second_part_title">Druhá část</h3>
+      <p id="second-part-text"></p>
+      <div class="btn-row">
+        <button type="button" id="btn-second-part" class="primary" data-i18n="second_part_start">Pokračovat druhou částí</button>
+        <button type="button" id="btn-finish-both" data-i18n="second_part_later">Skončit, druhou část dokončím jindy</button>
+      </div>
+    </div>
+    <p id="end-later-note" class="muted"></p>
     <div id="debrief-text" class="doc"></div>
     <div class="btn-row">
       <button type="button" id="btn-second" class="hidden" data-i18n="second_session">Absolvovat druhé sezení</button>
@@ -178,7 +208,7 @@
 <div id="hidden-pool" aria-hidden="true"></div>
 
 <script src="./config.js"></script>
-<script src="./i18n.js?v=20261013"></script>
-<script src="./app.js?v=20261013"></script>
+<script src="./i18n.js?v=20261014-grass"></script>
+<script src="./app.js?v=20261014-grass"></script>
 </body>
 </html>

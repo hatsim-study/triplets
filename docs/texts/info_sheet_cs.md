@@ -2,9 +2,8 @@
 
 **Název studie:** Vnímání podobnosti dynamických vizuálních materiálů (trojicová úloha)
 **Verze dokumentu:** info_sheet_cs v1.0, 10. 10. 2026
-**Správce osobních údajů:** [DOPLNÍ AUTOR: ČVUT v Praze, fakulta, pracoviště]
-**Řešitel:** [DOPLNÍ AUTOR: jméno, e-mail]
-**Etická komise:** [DOPLNÍ AUTOR: název, číslo a datum vyjádření]
+**Správce osobních údajů:** ČVUT v Praze
+**Řešitel:** Radek Richtr, richtrad@fit.cvut.cz
 
 Tento list rozvádí informace z informovaného souhlasu. Můžete si jej kdykoli znovu otevřít odkazem v zápatí aplikace.
 
@@ -18,11 +17,11 @@ Nejde o test Vašich schopností. Neexistují „správné“ a „špatné“ o
 
 1. **Souhlas** — přečtete si a potvrdíte informovaný souhlas (asi 2 minuty).
 2. **Tři údaje** — věková kategorie, korekce zraku (brýle/čočky: ano/ne), jazyk rozhraní (čeština/angličtina).
-3. **Krátká ukázka** — jedna až dvě cvičné trojice, které se nezaznamenávají, abyste si vyzkoušel(a) ovládání.
-4. **60 úloh** — v každé uvidíte tři videa ve smyčce a odpovíte jednou ze tří možností. Po 30 úlohách je zařazena přestávka; pokračujete, až budete chtít.
+3. **Krátká ukázka** — cvičné trojice pro vyzkoušení ovládání. Cvičné záznamy jsou vedeny odděleně od hodnocených úloh.
+4. **Hodnocené úlohy** — počet se řídí vybranou studií a přiděleným plánem. Smíšený pilot má 20 úloh bez přestávky; travní část má 24–40 úloh a přestávku po 20 úlohách. Přesný počet se zobrazí v instrukcích.
 5. **Kód dokončení** — na závěr obdržíte kód, který si uložte. Slouží k případnému smazání Vašich dat (a případně k uznání účasti, viz souhlas, bod 5).
 
-Celé sezení trvá obvykle 12–15 minut. Jednotlivé úlohy nemají časový limit, ale odpovídejte podle prvního celkového dojmu — není třeba videa dlouze studovat.
+Smíšený pilot trvá přibližně 4–6 minut, travní část 4–8 minut. Při volbě obou studií se délky sčítají. Jednotlivé úlohy nemají časový limit, ale odpovídejte podle prvního celkového dojmu — není třeba videa dlouze studovat.
 
 ## 3. Často kladené otázky
 
@@ -39,19 +38,19 @@ Celkový dojem z toho, jak video vypadá a jak se v něm věci hýbou: rytmus a 
 Odpověď pro případ, kdy oba kandidáti působí vůči referenci skutečně stejně podobně (nebo stejně nepodobně) a nedokážete se přiklonit ani k jednomu. Je to plnohodnotná odpověď a nepenalizuje se. Používejte ji však jen při skutečné nerozhodnosti — pokud se byť mírně přikláníte k jedné straně, zvolte ji.
 
 **Lze účast opakovat?**
-Ano, nejvýše **dvě sezení** celkem. Pro druhé sezení použijte pokud možno stejný prohlížeč a zařízení (aplikace si Vás pamatuje pod pseudonymním identifikátorem), případně zadejte kód dokončení z prvního sezení; tak zajistíme, že neuvidíte stejné trojice znovu. Třetí a další sezení aplikace nepřijme.
+Limit je veden pro každou studii zvlášť: nejvýše **dvě sezení na studii**, ve smíšeném pilotu pouze jedno. Pro druhé sezení použijte pokud možno stejný prohlížeč a zařízení (aplikace si Vás pamatuje pod pseudonymním identifikátorem), případně zadejte kód pozorovatele (`obs_…`) z prvního sezení; tak zajistíme, že neuvidíte stejné trojice znovu. Třetí a další sezení aplikace nepřijme.
 
 **Proč potřebujete věk, zrak a jazyk?**
 Věková kategorie a korekce zraku slouží jen k popisu souboru účastníků v publikaci (např. „účastníci ve věku 18–65 let, 40 % s korekcí zraku“). Jazyk určuje jazyk rozhraní a zaznamenává se, aby bylo možné ověřit, že obě jazykové verze instrukce vedou ke stejným výsledkům.
 
 **Mohu ze studie odejít?**
-Kdykoli, zavřením okna. Nedokončené sezení se do hlavní analýzy nezahrne. Dokončené sezení lze nechat smazat na základě kódu dokončení do [DOPLNÍ AUTOR: datum]; napište na [DOPLNÍ AUTOR: e-mail].
+Kdykoli, zavřením okna. Nedokončené sezení se do hlavní analýzy nezahrne. Dokončené sezení lze nechat smazat na základě kódu dokončení do 9. 11. 2026; napište na richtrad@fit.cvut.cz.
 
 **Co se stane s mými odpověďmi?**
 Budou spojeny s odpověďmi ostatních účastníků a porovnány s počítačovými mírami. Anonymní soubor dat (který klip byl zvolen v které trojici, reakční časy, věková kategorie, korekce zraku, jazyk — bez jakéhokoli identifikátoru osoby) bude zveřejněn spolu s publikací, aby mohli ostatní výzkumníci výsledky ověřit. Podrobnosti viz informovaný souhlas, bod 6.
 
 **Dozvím se výsledky?**
-Po dokončení sezení se zobrazí krátké vysvětlení účelu studie. Odkaz na publikaci bude po jejím vydání k dispozici na [DOPLNÍ AUTOR: URL].
+Po dokončení sezení se zobrazí krátké vysvětlení účelu studie. Odkaz na publikaci bude po jejím vydání k dispozici na https://hatsim-study.github.io/triplets/.
 
 ## 4. Technické požadavky
 
@@ -67,6 +66,5 @@ Studie nepřináší rizika nad rámec běžného sledování videa. Při soust�
 
 ## 6. Kontakty
 
-- Průběh studie, technické potíže, smazání dat: [DOPLNÍ AUTOR: řešitel, e-mail]
-- Ochrana osobních údajů: pověřenec správce [DOPLNÍ AUTOR: kontakt]
-- Etické aspekty: [DOPLNÍ AUTOR: etická komise, kontakt]
+- Průběh studie, technické potíže, smazání dat: Radek Richtr, richtrad@fit.cvut.cz
+- Ochrana osobních údajů: pověřenec správce dpo@cvut.cz

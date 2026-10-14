@@ -29,6 +29,14 @@ from urllib.parse import parse_qs, urlparse
 SHEETS = ("plans", "plan_usage", "sessions", "trials", "practice")
 
 
+def study_of_plan(pid):
+    return "grass" if str(pid or "").startswith("G") else "mixed"
+
+
+def norm_study(s, pid):
+    return s if s in ("grass", "mixed") else study_of_plan(pid)
+
+
 def utcnow():
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%f")[:-3] + "Z"
 
@@ -61,6 +69,7 @@ class Store:
     # ---- mirrors planState_ / nextPlan_ / status_ of Code.gs
     def plan_state(self):
         plans = {r["plan_id"]: {"round": str(r["round"]), "panel": int(r["panel"]), "mode": str(r.get("mode", "main")),
+                                "study": norm_study(r.get("study"), r["plan_id"]),
                                 "n_trials": int(r["n_trials"]), "completed": 0, "active": 0} for r in self.rows["plans"]}
         by_session = {}
         for u in self.rows["plan_usage"]:
@@ -73,57 +82,68 @@ class Store:
             if st == "reserved" and ts < cutoff:
                 st = "expired"
             p = plans.get(u["plan_id"])
-            if p:
+            study = norm_study(u.get("study"), u["plan_id"])
+            mode = str(u.get("mode") or "main")
+            counts_for_plan = not (study == "grass" and mode == "pilot")   # pilot grass sessions are excluded by the analysis
+            if p and counts_for_plan:
                 if st == "completed":
                     p["completed"] += 1
                 elif st == "reserved":
                     p["active"] += 1
-            if st in ("completed", "reserved"):
-                by_obs.setdefault(u["observer_id"], []).append({"plan_id": u["plan_id"], "round": str(u["round"]),
-                                                                "status": st, "session_id": sid})
+            by_obs.setdefault(u["observer_id"], []).append({"plan_id": u["plan_id"], "round": str(u["round"]),
+                                                            "status": st, "session_id": sid, "study": study, "mode": mode})
         return plans, by_obs
 
-    def next_plan(self, observer_id, mode, session_number=None):
+    def next_plan(self, observer_id, mode, study=None, session_number=None):
         if not observer_id:
             return {"error": "missing_observer_id"}
         mode = "pilot" if mode == "pilot" else "main"
+        study = "grass" if study == "grass" else "mixed"
         plans, by_obs = self.plan_state()
-        prev = by_obs.get(observer_id, [])
-        max_sessions = 1 if mode == "pilot" else 2
+        hist = [u for u in by_obs.get(observer_id, []) if u["study"] == study]     # per study, incl. expired/abandoned
+        prev = [u for u in hist if u["status"] in ("completed", "reserved")]
+        max_sessions = 1 if (study == "mixed" and mode == "pilot") else 2
         for u in prev:
             if u["status"] == "reserved":
-                return {"plan_id": u["plan_id"], "round": u["round"], "session_id": u["session_id"], "resumed": True,
-                        "session_number": len(prev)}
+                return {"plan_id": u["plan_id"], "round": u["round"], "study": study, "session_id": u["session_id"],
+                        "resumed": True, "session_number": len(prev)}
         if len(prev) >= max_sessions:
-            return {"error": "max_sessions", "max_sessions": max_sessions, "sessions": len(prev)}
-        rnd = prev[0]["round"] if prev else None
-        used = {u["plan_id"] for u in prev}
+            return {"error": "max_sessions", "max_sessions": max_sessions, "sessions": len(prev), "study": study}
+        rnd = hist[0]["round"] if hist else None       # abandoned sessions pin the round too
+        used = {u["plan_id"] for u in hist}
+        plan_mode = "main" if study == "grass" else mode
+        reuse = (study == "mixed" and mode == "pilot")
         cands = [(pid, p["round"], p["completed"] + p["active"]) for pid, p in plans.items()
-                 if p["mode"] == mode and (rnd is None or p["round"] == rnd) and pid not in used
-                 and (mode == "pilot" or p["completed"] < 1)]
+                 if p["study"] == study and p["mode"] == plan_mode and (rnd is None or p["round"] == rnd) and pid not in used
+                 and (reuse or p["completed"] < 1)]
         if not cands:
-            return {"error": "no_plan_available", "round": rnd}
+            return {"error": "no_plan_available", "round": rnd, "study": study}
         m = min(c[2] for c in cands)
         pid, r, _ = random.choice([c for c in cands if c[2] == m])
         sid = "s_" + uuid.uuid4().hex
         self.append("plan_usage", {"plan_id": pid, "round": r, "session_id": sid, "observer_id": observer_id,
-                                   "mode": mode, "status": "reserved"})
-        return {"plan_id": pid, "round": r, "session_id": sid, "resumed": False, "session_number": len(prev) + 1}
+                                   "mode": mode, "status": "reserved", "study": study})
+        return {"plan_id": pid, "round": r, "study": study, "session_id": sid, "resumed": False, "session_number": len(prev) + 1}
 
     def status(self):
         plans, by_obs = self.plan_state()
         by_round = {}
+        by_study = {"mixed": {"plans": 0, "completed": 0, "active": 0}, "grass": {"plans": 0, "completed": 0, "active": 0}}
         total = done = active = 0
         for pid, p in plans.items():
-            r = by_round.setdefault(p["round"], {"plans": 0, "completed": 0, "active": 0, "panel": p["panel"], "mode": p["mode"]})
+            r = by_round.setdefault(p["round"], {"plans": 0, "completed": 0, "active": 0, "panel": p["panel"], "mode": p["mode"], "study": p["study"]})
             r["plans"] += 1
             r["completed"] += min(1, p["completed"])
             r["active"] += p["active"]
+            s = by_study.setdefault(p["study"], {"plans": 0, "completed": 0, "active": 0})
+            s["plans"] += 1
+            s["completed"] += min(1, p["completed"])
+            s["active"] += p["active"]
             total += 1
             done += min(1, p["completed"])
             active += p["active"]
         return {"generated_utc": utcnow(), "plans_total": total, "plans_completed": done, "plans_reserved": active,
-                "rounds": by_round, "n_trial_rows": len(self.rows["trials"]), "n_plan_usage_rows": len(self.rows["plan_usage"]),
+                "studies": by_study, "rounds": by_round, "n_trial_rows": len(self.rows["trials"]), "n_plan_usage_rows": len(self.rows["plan_usage"]),
                 "observers": len(by_obs), "reservation_min": self.reservation_min}
 
     def post(self, body):
@@ -135,19 +155,21 @@ class Store:
             if key in self.trial_keys:
                 return {"ok": True, "duplicate": True}
             self.trial_keys.add(key)
+            body = dict(body, study_part=norm_study(body.get("study_part"), body.get("plan_id")))
             self.append("trials", body)
             return {"ok": True}
         if t == "practice_trial":
             self.append("practice", body)
             return {"ok": True}
         if t == "session_start":
-            self.append("sessions", dict(body, completed=False))
+            self.append("sessions", dict(body, completed=False, study=norm_study(body.get("study"), body.get("plan_id"))))
             return {"ok": True}
         if t == "session_end":
-            self.append("sessions", body)
+            self.append("sessions", dict(body, study=norm_study(body.get("study"), body.get("plan_id"))))
             status = "completed" if body.get("completed") else "abandoned"
             self.append("plan_usage", {"plan_id": body.get("plan_id"), "round": body.get("round"), "session_id": body.get("session_id"),
-                                       "observer_id": body.get("observer_id"), "mode": body.get("mode"), "status": status})
+                                       "observer_id": body.get("observer_id"), "mode": body.get("mode"), "status": status,
+                                       "study": norm_study(body.get("study"), body.get("plan_id"))})
             return {"ok": True, "status": status}
         if t == "register_plans":
             if self.admin_token == "CHANGE_ME" or body.get("token") != self.admin_token:
@@ -156,7 +178,7 @@ class Store:
             n = 0
             for pl in body.get("plans", []):
                 if pl["plan_id"] not in existing:
-                    self.append("plans", pl)
+                    self.append("plans", dict({"mode": "main"}, **dict(pl, study=norm_study(pl.get("study"), pl["plan_id"]))))
                     existing.add(pl["plan_id"])
                     n += 1
             return {"ok": True, "added": n, "total": len(existing)}
@@ -196,7 +218,7 @@ class Handler(BaseHTTPRequestHandler):
                 if action == "health":
                     return self._json({"ok": True, "ts": utcnow()})
                 if action == "next_plan":
-                    return self._json(self.store.next_plan(q.get("observer_id"), q.get("mode"), q.get("session_number")))
+                    return self._json(self.store.next_plan(q.get("observer_id"), q.get("mode"), q.get("study"), q.get("session_number")))
                 if action == "status":
                     return self._json(self.store.status())
                 if action == "export":
@@ -259,14 +281,20 @@ def main():
     ap.add_argument("--docs", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs"))
     ap.add_argument("--reservation-min", type=float, default=90.0)
     ap.add_argument("--admin-token", default="testtoken")
-    ap.add_argument("--register", default=None, help="plan_index.json to register at start-up")
+    ap.add_argument("--register", default=None, action="append",
+                    help="plan index to register at start-up (plan_index.json, plan_index_grass.json or plans*.json); repeatable")
     a = ap.parse_args()
     Handler.store = Store(a.data, a.reservation_min, a.admin_token)
     Handler.docs = a.docs if os.path.isdir(a.docs) else None
-    if a.register:
-        with open(a.register, encoding="utf-8") as fh:
-            res = Handler.store.post({"type": "register_plans", "token": a.admin_token, "plans": json.load(fh)})
-        sys.stderr.write("register_plans: %s\n" % res)
+    for reg in (a.register or []):
+        with open(reg, encoding="utf-8") as fh:
+            data = json.load(fh)
+        if isinstance(data, dict) and "plans" in data:      # a plans*.json file -> index entries
+            data = [{"plan_id": p["plan_id"], "round": p["round"], "panel": p["panel"], "n_trials": p["n_trials"],
+                     "mode": "pilot" if p["round"] == "PILOT" else "main", "study": p.get("study") or study_of_plan(p["plan_id"])}
+                    for p in data["plans"]]
+        res = Handler.store.post({"type": "register_plans", "token": a.admin_token, "plans": data})
+        sys.stderr.write("register_plans %s: %s\n" % (reg, res))
     httpd = ThreadingHTTPServer((a.host, a.port), Handler)
     httpd.daemon_threads = True
     sys.stderr.write("mock Apps Script at http://%s:%d/exec  (frontend: http://%s:%d/)\n" % (a.host, a.port, a.host, a.port))

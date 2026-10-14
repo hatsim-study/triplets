@@ -1,14 +1,14 @@
 # Náborové texty
 
-<!-- Verze recruitment_cs v1.0, 10. 10. 2026. Před rozesláním doplnit odkaz, kontakt, informaci o odměně a číslo vyjádření etické komise. Texty nesmějí uvádět, které počítačové míry se srovnávají, ani očekávaný výsledek. -->
+<!-- Verze recruitment_cs v1.0, 10. 10. 2026. Před rozesláním doplnit e-mail řešitele. Texty nesmějí uvádět, které počítačové míry se srovnávají, ani očekávaný výsledek. -->
 
 ## A. Náborový e-mail
 
 **Předmět:** Online studie vnímání podobnosti videí (15 minut) — hledáme účastníky
 
-Vážené kolegyně, vážení kolegové, [DOPLNÍ AUTOR: oslovení podle kanálu — studenti předmětu …, členové katedry …],
+Vážené kolegyně, vážení kolegové, Vážení kolegové a studenti,
 
-[DOPLNÍ AUTOR: pracoviště, ČVUT v Praze] provádí online studii o tom, jak lidé vnímají podobnost krátkých videí přírodních scén a materiálů (voda, vegetace, oheň, látky a podobně). Lidské úsudky budeme porovnávat s počítačovými mírami podobnosti videí; cílem je zjistit, jak dobře takové míry odpovídají lidskému vnímání.
+ČVUT v Praze provádí online studii o tom, jak lidé vnímají podobnost krátkých videí přírodních scén a materiálů (voda, vegetace, oheň, látky a podobně). Lidské úsudky budeme porovnávat s počítačovými mírami podobnosti videí; cílem je zjistit, jak dobře takové míry odpovídají lidskému vnímání.
 
 **Co účast obnáší**
 
@@ -26,15 +26,15 @@ Videa neobsahují blikání, mohou však obsahovat rychlý přirozený pohyb; os
 
 **Anonymita.** Nezaznamenáváme jméno, e-mail ani IP adresu. Ukládají se pouze Vaše volby, reakční časy, technické údaje o přehrávání a tři popisné údaje (věková kategorie, korekce zraku, jazyk). Anonymní data budou zveřejněna spolu s vědeckou publikací. Podrobnosti najdete v informovaném souhlasu na začátku studie.
 
-**Odměna:** [DOPLNÍ AUTOR: bez odměny / … kreditů za sezení po zadání kódu dokončení v …]
+**Odměna:** bez odměny
 
-**Odkaz na studii:** [DOPLNÍ AUTOR: URL]
+**Odkaz na studii:** https://hatsim-study.github.io/triplets/
 
-Studie byla posouzena [DOPLNÍ AUTOR: etickou komisí …, č. j. …, dne …]. S dotazy se obracejte na [DOPLNÍ AUTOR: jméno, e-mail].
+Studie byla posouzena . S dotazy se obracejte na Radek Richtr, richtrad@fit.cvut.cz.
 
 Děkujeme za Váš čas.
 
-[DOPLNÍ AUTOR: jméno a podpis řešitele, pracoviště]
+Radek Richtr, Fakulta informačních technologií ČVUT v Praze
 
 ---
 
@@ -43,13 +43,13 @@ Děkujeme za Váš čas.
 **Hledáme účastníky online studie (15 min, z počítače).**
 Zkoumáme, jak lidé vnímají podobnost krátkých videí přírodních scén — vody, trávy, ohně, látek — a jak si s tím poradí počítač. Úkol: 60× se podívat na tři krátká videa a zvolit, které ze dvou dolních je celkovým charakterem podobnější hornímu. Bez přípravy, bez správných odpovědí, anonymně (žádné jméno, e-mail ani IP adresa).
 Podmínky: 18+, běžný nebo korigovaný zrak, počítač (ne mobil), stabilní připojení. Videa neblikají, ale obsahují rychlý pohyb — s fotosenzitivní epilepsií prosím neúčastněte se.
-Odměna: [DOPLNÍ AUTOR].
-Odkaz: [DOPLNÍ AUTOR: URL] · Kontakt: [DOPLNÍ AUTOR: e-mail] · [DOPLNÍ AUTOR: pracoviště, ČVUT v Praze]; posouzeno etickou komisí [DOPLNÍ AUTOR: č. j.].
+Odměna: žádná.
+Odkaz: https://hatsim-study.github.io/triplets/ · Kontakt: richtrad@fit.cvut.cz · ČVUT v Praze.
 
 ---
 
 ## C. Připomínka (druhá vlna, volitelné)
 
-**Předmět:** Připomínka: online studie vnímání podobnosti videí — ještě [DOPLNÍ AUTOR: počet] sezení do konce sběru
+**Předmět:** Připomínka: online studie vnímání podobnosti videí — ještě … sezení do konce sběru
 
-Pokud jste se zúčastnil(a), děkujeme — a připomínáme, že je možné absolvovat ještě jedno (druhé) sezení; pro ně použijte stejný prohlížeč nebo zadejte kód dokončení z prvního sezení. Pokud jste se dosud nezúčastnil(a), sběr dat probíhá do [DOPLNÍ AUTOR: datum]. Odkaz: [DOPLNÍ AUTOR: URL].
+Pokud jste se zúčastnil(a), děkujeme — a připomínáme, že je možné absolvovat ještě jedno (druhé) sezení; pro ně použijte stejný prohlížeč nebo zadejte kód dokončení z prvního sezení. Pokud jste se dosud nezúčastnil(a), sběr dat probíhá do 9. 11. 2026. Odkaz: https://hatsim-study.github.io/triplets/.

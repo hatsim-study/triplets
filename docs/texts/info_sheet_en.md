@@ -2,9 +2,8 @@
 
 **Study title:** Perceived similarity of dynamic visual materials (triplet task)
 **Document version:** info_sheet_en v1.0, 10 Oct 2026
-**Data controller:** [TO BE COMPLETED BY AUTHORS: CTU in Prague, faculty, department]
-**Investigator:** [TO BE COMPLETED BY AUTHORS: name, e-mail]
-**Ethics committee:** [TO BE COMPLETED BY AUTHORS: name, reference number and date of the opinion]
+**Data controller:** CTU in Prague
+**Investigator:** Radek Richtr, richtrad@fit.cvut.cz
 
 This sheet expands on the information given in the informed consent form. You can reopen it at any time via the link in the footer of the application.
 
@@ -18,11 +17,11 @@ This is not a test of your abilities. There are no "right" or "wrong" answers; w
 
 1. **Consent** — you read and confirm the informed consent form (about 2 minutes).
 2. **Three items** — age band, vision correction (glasses/contact lenses: yes/no), interface language (Czech/English).
-3. **Short demonstration** — one or two practice triplets that are not recorded, so you can try the controls.
-4. **60 trials** — in each you see three looping videos and answer with one of three options. After 30 trials there is a break; you continue whenever you are ready.
+3. **Short demonstration** — practice triplets to try the controls. Practice records are stored separately from the rated trials.
+4. **Rated trials** — the number depends on your selected study and assigned plan. The mixed pilot has 20 trials without a break; the grass part has 24–40 trials with a break after 20. The instructions show your exact trial count.
 5. **Completion code** — at the end you receive a code; please save it. It is used for a possible deletion of your data (and, where applicable, for crediting your participation; see consent form, Section 5).
 
-A whole session usually takes 12–15 minutes. Individual trials have no time limit, but please answer according to your first overall impression — there is no need to study the videos at length.
+The mixed pilot takes about 4–6 minutes and the grass part 4–8 minutes. Choosing both studies adds the durations. Individual trials have no time limit, but please answer according to your first overall impression — there is no need to study the videos at length.
 
 ## 3. Frequently asked questions
 
@@ -39,19 +38,19 @@ The overall impression of how the video looks and how things move in it: the rhy
 This answer is for the case when both candidates genuinely appear equally similar (or equally dissimilar) to the reference and you cannot lean towards either. It is a fully valid answer and is not penalised. Please use it only when you are genuinely undecided — if you lean even slightly to one side, choose that side.
 
 **Can I take part more than once?**
-Yes, at most **two sessions** in total. For the second session please use the same browser and device if possible (the application remembers you under a pseudonymous identifier), or enter the completion code from your first session; this ensures that you do not see the same triplets again. The application will not accept a third session.
+The limit applies separately to each study: at most **two sessions per study**, but only one for the mixed pilot. For the second session please use the same browser and device if possible (the application remembers you under a pseudonymous identifier), or enter the observer code (`obs_…`) from your first session; this ensures that you do not see the same triplets again. The application will not accept a third session.
 
 **Why do you need age, vision and language?**
 Age band and vision correction are used only to describe the participant sample in the publication (e.g. "participants aged 18–65, 40 % with vision correction"). Language sets the interface language and is recorded so that we can verify that both language versions of the instruction yield the same results.
 
 **Can I leave the study?**
-At any time, by closing the window. An unfinished session is not included in the main analysis. A completed session can be deleted on the basis of the completion code until [TO BE COMPLETED BY AUTHORS: date]; write to [TO BE COMPLETED BY AUTHORS: e-mail].
+At any time, by closing the window. An unfinished session is not included in the main analysis. A completed session can be deleted on the basis of the completion code until 9 November 2026; write to richtrad@fit.cvut.cz.
 
 **What happens to my responses?**
 They are pooled with those of other participants and compared with computational measures. An anonymous dataset (which clip was chosen in which triplet, response times, age band, vision correction, language — without any personal identifier) will be published together with the publication so that other researchers can verify the results. See the informed consent form, Section 6, for details.
 
 **Will I learn the results?**
-After completing a session, a short explanation of the study's purpose is shown. A link to the publication will be available after it appears at [TO BE COMPLETED BY AUTHORS: URL].
+After completing a session, a short explanation of the study's purpose is shown. A link to the publication will be available after it appears at https://hatsim-study.github.io/triplets/.
 
 ## 4. Technical requirements
 
@@ -63,10 +62,9 @@ After completing a session, a short explanation of the study's purpose is shown.
 
 ## 5. Risks and comfort
 
-The study carries no risks beyond those of ordinary video viewing. Concentrated viewing may cause mild eye fatigue — please use the break halfway through. The videos contain no flicker or flashes, but they do contain natural, sometimes fast motion (water, leaves, vehicles). We do not recommend participation for people with photosensitive epilepsy or who find rapidly moving images uncomfortable.
+The study carries no risks beyond those of ordinary video viewing. Concentrated viewing may cause mild eye fatigue — you can rest your eyes whenever needed. The videos contain no flicker or flashes, but they do contain natural, sometimes fast motion (water, leaves, vehicles). We do not recommend participation for people with photosensitive epilepsy or who find rapidly moving images uncomfortable.
 
 ## 6. Contacts
 
-- Study procedure, technical problems, data deletion: [TO BE COMPLETED BY AUTHORS: investigator, e-mail]
-- Personal data protection: controller's data protection officer [TO BE COMPLETED BY AUTHORS: contact]
-- Ethical aspects: [TO BE COMPLETED BY AUTHORS: ethics committee, contact]
+- Study procedure, technical problems, data deletion: Radek Richtr, richtrad@fit.cvut.cz
+- Personal data protection: controller's data protection officer dpo@cvut.cz

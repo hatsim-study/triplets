@@ -11,6 +11,10 @@ The screen shows three short videos playing in a loop:
 
 All three videos play simultaneously and repeat until you answer. They have no sound.
 
+## 1a. Two studies, the same task
+
+On the introductory screen you choose between the **grass study** (40 trials, about 6–8 minutes; all clips show grass and shrubs — the differences in motion, e.g. wind and the rhythm of swaying, and in the structure of the vegetation are subtle, judge them as carefully as pronounced differences), the **mixed scenes study** ({{N_TRIALS}} trials, about {{DURATION}}; water, foliage, smoke, flags, machinery and other dynamic textures) and **both** (the two parts one after the other in random order; after the first part you can continue right away or finish the second part another day). The question and the controls are the same in both parts.
+
 ## 2. The question
 
 In every trial you answer the same question:

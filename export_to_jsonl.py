@@ -9,7 +9,8 @@ sheets downloaded as CSV) into sessions.jsonl + trials.jsonl in the analysis for
 
 sessions.jsonl : ONE row per session = last known state (session_start merged with session_end;
                  a session without session_end gets completed=false, n_trials_done = number of trial rows).
-trials.jsonl   : one row per (session_id, trial_index), duplicates dropped (first row wins),
+                 `study` = "mixed" | "grass" (derived from plan_id for rows written before the grass study).
+trials.jsonl   : one row per (session_id, trial_index), duplicates dropped (first row wins), `study_part` = mixed|grass,
                  JSON-typed columns (loop_phase_ms, screen, flags) parsed back to objects,
                  server_received_utc = sheet timestamp `ts`.
 practice_trials.jsonl and plan_usage.jsonl are written as well.
@@ -86,10 +87,15 @@ def load_csv_dir(d):
 TRIAL_FIELDS = ["session_id", "observer_id", "trial_index", "triplet_id", "study", "anchor_clip", "left_clip", "right_clip",
                 "B_side", "response", "chosen_clip", "rt_ms", "loop_phase_ms", "is_repeat", "repeat_of_trial_index",
                 "is_attention", "panel", "playback_errors", "timestamp_utc", "ui_lang", "screen", "flags", "plan_id", "round",
-                "server_received_utc"]
+                "study_part", "server_received_utc"]
 SESSION_FIELDS = ["session_id", "observer_id", "session_number_for_observer", "consent_version", "consent_ts", "demographics",
                   "start_ts", "end_ts", "completed", "n_trials_target", "n_trials_done", "user_agent", "completion_code",
-                  "ui_lang", "mode", "plan_id", "round", "valid", "end_reason"]
+                  "ui_lang", "mode", "plan_id", "round", "study", "valid", "end_reason"]
+
+
+def study_of_plan(pid):
+    """Study of a plan id: G* -> grass, everything else -> mixed (rows written before the grass study have no study column)."""
+    return "grass" if str(pid or "").startswith("G") else "mixed"
 
 
 def convert(data, out_dir):
@@ -110,6 +116,7 @@ def convert(data, out_dir):
         rec["is_repeat"] = bool(rec["is_repeat"])
         rec["is_attention"] = bool(rec["is_attention"])
         rec["panel"] = int(rec["panel"] or 1)
+        rec["study_part"] = rec.get("study_part") if rec.get("study_part") in ("mixed", "grass") else study_of_plan(rec.get("plan_id"))
         trials.append(rec)
     n_by_sess = {}
     for r in trials:
@@ -130,6 +137,7 @@ def convert(data, out_dir):
     for sid, cur in sess.items():
         cur["completed"] = bool(cur.get("completed")) and cur.get("_type") == "session_end"
         cur["n_trials_done"] = n_by_sess.get(sid, 0)
+        cur["study"] = cur.get("study") if cur.get("study") in ("mixed", "grass") else study_of_plan(cur.get("plan_id"))
         cur["valid"] = True
         if not cur["completed"]:
             cur["end_reason"] = cur.get("end_reason") or "no_session_end"
@@ -143,7 +151,7 @@ def convert(data, out_dir):
                              "consent_version": None, "consent_ts": None, "demographics": {}, "start_ts": None, "end_ts": None,
                              "completed": False, "n_trials_target": None, "n_trials_done": n_by_sess[sid], "user_agent": None,
                              "completion_code": None, "ui_lang": r0.get("ui_lang"), "mode": None, "plan_id": r0.get("plan_id"),
-                             "round": r0.get("round"), "valid": True, "end_reason": "no_session_rows"})
+                             "round": r0.get("round"), "study": study_of_plan(r0.get("plan_id")), "valid": True, "end_reason": "no_session_rows"})
     with open(os.path.join(out_dir, "trials.jsonl"), "w", encoding="utf-8") as fh:
         for r in trials:
             fh.write(json.dumps(r, ensure_ascii=False) + "\n")

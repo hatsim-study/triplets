@@ -8,9 +8,12 @@ window.HAT_CONFIG = {
   CLIPS_INDEX_URL: "./clips_index.json",
   CLIPS_BASE: "https://hatsim-study.github.io/clips-a/",
   PLANS_URL: "./plans.json",
-  CONSENT_VERSION: "v1.0-placeholder",
+  // grass study (second study): plans + clip index; remove/leave empty to offer only the mixed-scenes study
+  PLANS_GRASS_URL: "./plans_grass.json",
+  CLIPS_INDEX_GRASS_URL: "./clips_index_grass.json",
+  CONSENT_VERSION: "v1.1",
   MIN_PLAY_MS: 2000,          // answer allowed only after all three clips played this long
-  BREAK_AFTER: 30,            // break after N trials
+  BREAK_AFTER: { mixed: 30, grass: 20 },   // break after N trials, per study (a plain number applies to both)
   MIN_SCREEN_WIDTH: 900,
   CLIP_DURATION_S: 10,
   DEFAULT_LANG: "cs",

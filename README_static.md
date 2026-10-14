@@ -54,6 +54,19 @@ Všechny cesty ve frontendu jsou relativní (`./app.js`, `./plans.json`, `./text
 
 **Limity GitHub Pages**: 1 GB na web, 100 GB přenosu/měsíc (měkký limit), 10 buildů/h. Odhad přenosu: 1 sezení ≈ 63 trialů × 3 klipy × ~0,6 MB ≈ 110 MB (bez cache; klipy se opakují, cache prohlížeče část ušetří) → ~250 sezení ≈ 25–30 GB, s rezervou v limitu. Dva klipové repozitáře dělí zátěž i objem.
 
+## Dvě studie (tráva + smíšené scény)
+
+Od 13. 10. 2026 nabízí aplikace po souhlasu a demografii obrazovku **Výběr studie**: *Studie tráva* (40 úloh, ~6–8 min; `docs/plans_grass.json`, 154 plánů GR1–GR7 ×18 panel 1 + GP1–GP7 ×4 panel 2, 40 trialů = 34 čerstvých + 4 zrcadlená opakování + 2 attention, několik plánů 24/28; klipy `G_*` 704×528 4:3, 7,2 s, `docs/clips_index_grass.json` → `https://hatsim-study.github.io/clips-grass/<id>.mp4`), *Studie smíšené scény* (dosavadní `plans.json`) a *Obojí*.
+
+* **Obojí**: pořadí částí je náhodné; po dokončení první části se nabídne pokračovat druhou hned, nebo skončit a druhou dokončit jindy — při návratu (stejný prohlížeč, nebo zadaný kód pozorovatele) se na úvodní obrazovce nabídne jen zbývající část (`localStorage` klíč `hat_parts_v1`; z jiného prohlížeče stav nepřenáší, limity hlídá backend).
+* **Backend** (`Code.gs`): `next_plan` má parametr `study=mixed|grass`; počitadla plánů, pravidlo „2. sezení ze stejného kola“ i limit **max 2 sezení na studii** (2 smíšená + 2 travní) jsou vedeny per studie. Plány tráv se poznají podle prefixu `G`; řádky zapsané před zavedením tráv nemají sloupec `study` a berou se jako `mixed`. Nové sloupce (`study` v `plans`, `plan_usage`, `sessions`; `study_part` v `trials`) se do existujících listů doplní automaticky na konec hlavičky.
+* **Pilot**: travní studie nemá PILOT plány — v režimu `pilot` se tráva nabízí normálně z plánů GR/GP, sezení nese `mode:"pilot"` a analýza je vyřadí; takové sezení se nepočítá jako dokončení plánu (plán se v hlavním sběru přidělí znovu). Smíšená studie v pilotu = PILOT plány, 1 sezení na pozorovatele (beze změny).
+* **Záznamy**: `sessions` i `plan_usage` nesou `study` (`mixed|grass`), `trials` nesou `study_part` (`mixed|grass`) vedle dosavadního `study` trojice (`main|sdyn|attention|pilot|grass|attention_grass`) a `plan_id`. `export_to_jsonl.py` doplní `study`/`study_part` z `plan_id` u starších řádků; `check_pilot_session.py --plans docs/plans.json docs/plans_grass.json` hledá plán v obou souborech.
+* **Délka a texty**: tokeny `{{N_TRIALS}}`, `{{DURATION}}` (40 úloh → „6–8 minut“), `{{BREAK_SENTENCE}}` a nový `{{STUDY_SENTENCE}}` (věta o travní / smíšené části v instrukcích); přestávka per studie `config.js → BREAK_AFTER: { mixed: 30, grass: 20 }`.
+* **Layout**: `.vid-box` má pevnou výšku, šířku podle studie (`body.study-grass` → 384 px = 4:3, jinak 352 px) a `object-fit: contain`, takže se klip jiného poměru nikdy nedeformuje.
+* **Registrace plánů**: `python register_plans.py --url …/exec --token … --index docs/plans_grass.json` (nebo `plan_index_grass.csv` ručně do listu `plans`; hlavička `plan_id, round, panel, n_trials, mode, study`).
+* **Simulace** (`simulate_static_observers.py --plans-grass docs/plans_grass.json --p-both 0.3 …`, výstup `static_simulation_report_grass.md`): 290 sezení (180 travních pokusů, 110 smíšených; 36 pozorovatelů s oběma studiemi, polovina „obojí“ končí po první části) — V1–V7 PASS: kola per studie, max 2+2 sezení, žádná trojice 2×, panel 2 od jiných pozorovatelů, všech 154 GR/GP plánů dokončeno.
+
 ## Pilot vs. main
 
 `docs/config.js → MODE`:

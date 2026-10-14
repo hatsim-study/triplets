@@ -5,6 +5,8 @@
 
   var C = window.HAT_CONFIG;
   var LS_OBS = "hat_observer_id", LS_SESSION = "hat_static_session_v1", LS_QUEUE = "hat_static_queue_v1", LS_LANG = "hat_lang";
+  var LS_PARTS = "hat_parts_v1";            // progress of the "both studies" choice (per observer, this browser)
+  var STUDIES = ["mixed", "grass"];
   var ROLES = ["anchor", "left", "right"];
   var OBS_RE = /^obs_[A-Za-z0-9]{12}$/;
 
@@ -12,29 +14,55 @@
     lang: "cs", plans: null, clips: {}, observer_id: null, session_id: null, plan: null, plan_id: null, round: null,
     next_index: 0, nTarget: 60, phase: "init", practice: [], pIdx: 0, cur: null, nextPromise: null,
     ready: false, smallScreen: false, smallAck: false, resumed: false, queue: [], sending: false, backoff: 2000,
-    netTimer: null, breakShownFor: -1, completion_code: null, session_number: 1, start_ts: null, demographics: null
+    netTimer: null, breakShownFor: -1, completion_code: null, session_number: 1, start_ts: null, demographics: null,
+    plansAll: { mixed: null, grass: null },   // plans.json / plans_grass.json
+    study: "mixed",                           // study of the current session: "mixed" (DynTex scenes) | "grass"
+    choice: "mixed",                          // observer's choice on the study screen: mixed | grass | both
+    parts: { observer_id: null, pending: null, done: { mixed: 0, grass: 0 } }
   };
+  function breakAfter(study) {
+    var b = C.BREAK_AFTER;
+    if (b && typeof b === "object") { return Number(b[study || S.study] || 0); }
+    return Number(b || 0);
+  }
+  function otherStudy(st) { return st === "grass" ? "mixed" : "grass"; }
 
   // ------------------------------------------------------------------ utils
   function $(id) { return document.getElementById(id); }
   // Session-size tokens: texts (i18n + texts/*.md) use {{N_TRIALS}}, {{DURATION}}, {{BREAK_SENTENCE}}.
   // Values come from the assigned plan when known, otherwise from the mode (pilot plans = 20 trials, main = 60).
   function sessionVars() {
-    var n = (S.plan && S.plan.trials) ? S.plan.trials.length : (C.MODE === "pilot" ? 20 : 60);
-    var hasBreak = C.BREAK_AFTER > 0 && n > C.BREAK_AFTER;
+    var n = (S.plan && S.plan.trials) ? S.plan.trials.length : (S.study === "grass" ? 40 : (C.MODE === "pilot" ? 20 : 60));
+    var ba = breakAfter(S.study);
+    var hasBreak = ba > 0 && n > ba;
     var cs = S.lang !== "en";
-    var dur = n <= 25 ? (cs ? "4–6 minut" : "4–6 minutes") : (cs ? "12–15 minut" : "12–15 minutes");
-    var brk = hasBreak ? (cs ? "Po " + C.BREAK_AFTER + " úlohách je zařazena přestávka." : "A break is scheduled after " + C.BREAK_AFTER + " trials.")
+    var dur = n <= 25 ? (cs ? "4–6 minut" : "4–6 minutes") : n <= 45 ? (cs ? "6–8 minut" : "6–8 minutes") : (cs ? "12–15 minut" : "12–15 minutes");
+    var brk = hasBreak ? (cs ? "Po " + ba + " úlohách je zařazena přestávka." : "A break is scheduled after " + ba + " trials.")
                        : (cs ? "Sezení je krátké, bez přestávky." : "The session is short, without a break.");
-    return { N_TRIALS: String(n), DURATION: dur, BREAK_SENTENCE: brk };
+    var studySentence = S.study === "grass" ? t0("instr_study_grass") : t0("instr_study_mixed");
+    return { N_TRIALS: String(n), DURATION: dur, BREAK_SENTENCE: brk, STUDY_SENTENCE: studySentence };
   }
+  function t0(key) { return (window.I18N[S.lang] && window.I18N[S.lang][key]) || window.I18N.cs[key] || ""; }
   function fillSession(s) {
     var v = sessionVars();
-    return s.replace(/\{\{N_TRIALS\}\}/g, v.N_TRIALS).replace(/\{\{DURATION\}\}/g, v.DURATION).replace(/\{\{BREAK_SENTENCE\}\}/g, v.BREAK_SENTENCE);
+    return s.replace(/\{\{N_TRIALS\}\}/g, v.N_TRIALS).replace(/\{\{DURATION\}\}/g, v.DURATION)
+            .replace(/\{\{BREAK_SENTENCE\}\}/g, v.BREAK_SENTENCE).replace(/\{\{STUDY_SENTENCE\}\}/g, v.STUDY_SENTENCE);
   }
   function t(key, vars) {
     var s = (window.I18N[S.lang] && window.I18N[S.lang][key]) || window.I18N.cs[key] || key;
     if (vars) { Object.keys(vars).forEach(function (k) { s = s.replace("{" + k + "}", vars[k]); }); }
+    // A study-choice label must describe its own study, even after switching languages mid-session.
+    if (key === "study_mixed_desc") {
+      var nMixed = C.MODE === "pilot" ? 20 : 60;
+      var mixedDuration = nMixed === 20 ? (S.lang === "en" ? "4–6 minutes" : "4–6 minut") : (S.lang === "en" ? "12–15 minutes" : "12–15 minut");
+      s = s.replace(/\{\{N_TRIALS\}\}/g, String(nMixed)).replace(/\{\{DURATION\}\}/g, mixedDuration);
+    }
+    // A study-choice label must describe its own study, even after switching languages mid-session.
+    if (key === "study_mixed_desc") {
+      var nMixed = C.MODE === "pilot" ? 20 : 60;
+      var mixedDuration = nMixed === 20 ? (S.lang === "en" ? "4–6 minutes" : "4–6 minut") : (S.lang === "en" ? "12–15 minutes" : "12–15 minut");
+      s = s.replace(/\{\{N_TRIALS\}\}/g, String(nMixed)).replace(/\{\{DURATION\}\}/g, mixedDuration);
+    }
     return fillSession(s);
   }
   function show(id) {
@@ -114,11 +142,23 @@
       if (S.observer_id) { localStorage.setItem(LS_OBS, S.observer_id); }
       if (S.session_id && S.phase !== "done") {
         localStorage.setItem(LS_SESSION, JSON.stringify({ session_id: S.session_id, plan_id: S.plan_id, round: S.round, next_index: S.next_index,
-          phase: S.phase, session_number: S.session_number, start_ts: S.start_ts, demographics: S.demographics, mode: C.MODE }));
+          phase: S.phase, session_number: S.session_number, start_ts: S.start_ts, demographics: S.demographics, mode: C.MODE,
+          study: S.study, choice: S.choice }));
       } else { localStorage.removeItem(LS_SESSION); }
       localStorage.setItem(LS_QUEUE, JSON.stringify(S.queue));
       localStorage.setItem(LS_LANG, S.lang);
+      localStorage.setItem(LS_PARTS, JSON.stringify(S.parts));
     } catch (e) { /* storage unavailable */ }
+  }
+  function loadParts() {
+    try {
+      var p = JSON.parse(localStorage.getItem(LS_PARTS) || "null");
+      if (p && p.done) { S.parts = p; }
+    } catch (e) { /* ignore */ }
+    if (S.parts.observer_id && S.observer_id && S.parts.observer_id !== S.observer_id) {
+      S.parts = { observer_id: S.observer_id, pending: null, done: { mixed: 0, grass: 0 } };   // another observer code -> fresh progress
+    }
+    S.parts.observer_id = S.observer_id || S.parts.observer_id;
   }
   function loadLocal() {
     try {
@@ -190,10 +230,11 @@
 
   // ---------------------------------------------------------- clips / plans
   function clipUrl(id) { return S.clips[id] || (C.CLIPS_BASE + id + ".mp4"); }
+  function studyOfPlanId(pid) { return (pid && pid.charAt(0) === "G") ? "grass" : "mixed"; }
   function planTrialToView(tr) {
     // plan trial {anchor, B, C, B_side, ...} -> view with left/right clips (B_side fixed by the plan)
     var left = tr.B_side === "left" ? tr.B : tr.C, right = tr.B_side === "left" ? tr.C : tr.B;
-    return { trial_index: tr.trial_index, triplet_id: tr.triplet_id, study: tr.study || "pilot", anchor_clip: tr.anchor,
+    return { trial_index: tr.trial_index, triplet_id: tr.triplet_id, study: tr.study || (S.study === "grass" ? "grass" : "pilot"), anchor_clip: tr.anchor,
              left_clip: left, right_clip: right, B_side: tr.B_side, is_repeat: !!tr.is_repeat,
              repeat_of_trial_index: (tr.repeat_of === undefined ? null : tr.repeat_of), is_attention: !!tr.is_attention, panel: tr.panel || 1 };
   }
@@ -276,7 +317,7 @@
       rt_ms: rt, loop_phase_ms: P.phase, is_repeat: tr.is_repeat, repeat_of_trial_index: tr.repeat_of_trial_index,
       is_attention: tr.is_attention, panel: tr.panel, playback_errors: P.errors, timestamp_utc: nowIso(), ui_lang: S.lang,
       screen: { w: window.innerWidth, h: window.innerHeight, dpr: window.devicePixelRatio || 1 }, flags: flags,
-      plan_id: S.plan_id, round: S.round
+      plan_id: S.plan_id, round: S.round, study_part: S.study
     };
   }
   function answer(resp) {
@@ -302,8 +343,9 @@
   // ----------------------------------------------------------- practice
   function startPractice() {
     S.phase = "practice"; S.pIdx = 0;
-    S.practice = (S.plans.practice || []).map(function (p, i) {
-      return planTrialToView({ trial_index: -3 + i, triplet_id: p.triplet_id, study: "pilot", anchor: p.anchor, B: p.B, C: p.C, B_side: p.B_side, panel: 1 });
+    var pr = (S.plansAll[S.study] && S.plansAll[S.study].practice) || [];
+    S.practice = pr.map(function (p, i) {
+      return planTrialToView({ trial_index: -3 + i, triplet_id: p.triplet_id, study: S.study === "grass" ? "grass" : "pilot", anchor: p.anchor, B: p.B, C: p.C, B_side: p.B_side, panel: 1 });
     });
     if (!S.practice.length) { return practiceDone(); }
     S.nextPromise = Promise.resolve(prepareTrial(S.practice[0]));
@@ -331,7 +373,7 @@
     if (!S.start_ts) {
       S.start_ts = nowIso();
       enqueue({ type: "session_start", session_id: S.session_id, observer_id: S.observer_id, session_number_for_observer: S.session_number,
-                plan_id: S.plan_id, round: S.round, mode: C.MODE, consent_version: C.CONSENT_VERSION, consent_ts: S.start_ts,
+                plan_id: S.plan_id, round: S.round, mode: C.MODE, study: S.study, consent_version: C.CONSENT_VERSION, consent_ts: S.start_ts,
                 demographics: S.demographics || {}, start_ts: S.start_ts, end_ts: null, completed: false, n_trials_target: S.nTarget,
                 n_trials_done: 0, user_agent: S.ua_hash || null, completion_code: null, ui_lang: S.lang });
     }
@@ -352,7 +394,8 @@
   function afterMainTrial() {
     var k = S.next_index;
     if (k >= S.nTarget) { return showMainTrial(); }
-    if (C.BREAK_AFTER > 0 && k % C.BREAK_AFTER === 0 && S.breakShownFor !== k) {
+    var ba = breakAfter(S.study);
+    if (ba > 0 && k % ba === 0 && S.breakShownFor !== k) {
       S.breakShownFor = k;
       destroyTrial(S.cur); S.cur = null;
       show("screen-break");
@@ -371,15 +414,35 @@
       var code = h ? "HAT-" + h.slice(0, 4).toUpperCase() + "-" + h.slice(4, 8).toUpperCase() : "HAT-" + S.session_id.slice(-8).toUpperCase();
       S.completion_code = code;
       enqueue({ type: "session_end", session_id: S.session_id, observer_id: S.observer_id, session_number_for_observer: S.session_number,
-                plan_id: S.plan_id, round: S.round, mode: C.MODE, consent_version: C.CONSENT_VERSION, demographics: S.demographics || {},
+                plan_id: S.plan_id, round: S.round, mode: C.MODE, study: S.study, consent_version: C.CONSENT_VERSION, demographics: S.demographics || {},
                 start_ts: S.start_ts, end_ts: nowIso(), completed: true, n_trials_target: S.nTarget, n_trials_done: S.next_index,
                 user_agent: S.ua_hash || null, completion_code: code, ui_lang: S.lang, end_reason: "completed" });
       return flushQueue();
     }).then(function () {
       $("completion-code").textContent = S.completion_code;
       $("end-note").textContent = t("end_done");
-      if (S.session_number < C.MAX_SESSIONS && C.MODE !== "pilot") { $("btn-second").classList.remove("hidden"); }
+      S.parts.done[S.study] = (S.parts.done[S.study] || 0) + 1;
+      var other = otherStudy(S.study);
+      if (S.choice === "both" && S.parts.pending === S.study) { S.parts.pending = null; }
+      if (S.choice === "both" && !S.parts.done[other]) {
+        S.parts.pending = other;                                 // second part still to do (now or another day)
+        $("second-part-text").textContent = t("second_part_text", { s: t(other === "grass" ? "study_grass_name" : "study_mixed_name") });
+        $("second-part-box").classList.remove("hidden");
+      } else if (S.session_number < C.MAX_SESSIONS && !(C.MODE === "pilot" && S.study === "mixed")) {
+        $("btn-second").classList.remove("hidden");
+      }
       saveLocal();
+    });
+  }
+  function startSecondPart() {
+    var next = otherStudy(S.study);
+    $("second-part-box").classList.add("hidden");
+    $("btn-second-part").disabled = true;
+    S.study = next; S.plan = null; S.plan_id = null; S.round = null; S.session_id = null; S.next_index = 0; S.start_ts = null;
+    S.breakShownFor = -1; S.phase = "init"; S.session_number = 1;
+    requestPlan().then(function (d) {
+      $("btn-second-part").disabled = false;
+      if (d) { $("btn-practice").disabled = false; show("screen-instr"); }
     });
   }
   function fatal(titleKey, textKey) {
@@ -390,22 +453,63 @@
 
   // ----------------------------------------------------------- session
   function planById(pid) {
-    for (var i = 0; i < S.plans.plans.length; i++) { if (S.plans.plans[i].plan_id === pid) { return S.plans.plans[i]; } }
+    var sets = [S.plansAll.mixed, S.plansAll.grass];
+    for (var s = 0; s < sets.length; s++) {
+      var list = (sets[s] && sets[s].plans) || [];
+      for (var i = 0; i < list.length; i++) { if (list[i].plan_id === pid) { return list[i]; } }
+    }
     return null;
   }
   function requestPlan() {
-    return apiGetRetry({ action: "next_plan", observer_id: S.observer_id, mode: C.MODE, session_number: S.session_number }).then(function (d) {
+    return apiGetRetry({ action: "next_plan", observer_id: S.observer_id, mode: C.MODE, study: S.study, session_number: S.session_number }).then(function (d) {
       if (d.error === "max_sessions") { fatal("max_sessions_title", "max_sessions_text"); return null; }
       if (d.error === "no_plan_available") { fatal("no_plan_title", "no_plan_text"); return null; }
       if (!d.plan_id || !d.session_id) { fatal("error_title", "error_text"); return null; }
       var plan = planById(d.plan_id);
       if (!plan) { fatal("error_title", "error_text"); return null; }
       S.plan = plan; S.plan_id = d.plan_id; S.round = d.round || plan.round; S.session_id = d.session_id;
+      S.study = d.study || studyOfPlanId(d.plan_id);
       S.session_number = d.session_number || S.session_number; S.nTarget = plan.trials.length;
+      document.body.className = "study-" + S.study;
       $("instr-text").innerHTML = t("instr_html"); loadDoc("consent", "consent-text"); loadDoc("debrief", "debrief-text");   // refresh session-size tokens
       S.resumed = !!d.resumed; S.next_index = 0; S.start_ts = null;
       saveLocal();
       return d;
+    });
+  }
+
+  // ------------------------------------------------------- study choice
+  function showStudyChoice() {
+    var pending = S.parts.pending;
+    var maxS = C.MAX_SESSIONS || 2;
+    $("study-pending-note").textContent = pending ? t("study_pending_note", { s: t(pending === "grass" ? "study_grass_name" : "study_mixed_name") }) : "";
+    var opts = document.querySelectorAll(".study-opt");
+    for (var i = 0; i < opts.length; i++) {
+      var st = opts[i].getAttribute("data-study");
+      var hide = pending ? st !== pending : false;
+      var full = st === "both" ? (S.parts.done.mixed >= maxS || S.parts.done.grass >= maxS) : (S.parts.done[st] || 0) >= maxS;
+      opts[i].classList.toggle("hidden", hide);
+      opts[i].disabled = full;
+    }
+    show("screen-study");
+  }
+  function chooseStudy(choice) {
+    S.choice = choice;
+    if (choice === "both") {
+      S.study = Math.random() < 0.5 ? "mixed" : "grass";       // random order of the two parts
+      S.parts.pending = otherStudy(S.study);
+    } else {
+      S.study = choice;
+      if (S.parts.pending === choice) { S.parts.pending = null; S.choice = "both"; }
+    }
+    document.body.className = "study-" + S.study;
+    S.plan = null; S.plan_id = null; S.session_id = null; S.next_index = 0; S.start_ts = null; S.breakShownFor = -1;
+    var opts = document.querySelectorAll(".study-opt");
+    for (var i = 0; i < opts.length; i++) { opts[i].disabled = true; }
+    requestPlan().then(function (d) {
+      for (var j = 0; j < opts.length; j++) { opts[j].disabled = false; }
+      if (d) { show("screen-instr"); } else if (S.choice === "both") { S.parts.pending = null; }
+      saveLocal();
     });
   }
 
@@ -424,9 +528,19 @@
       }
       if (!S.observer_id) { S.observer_id = randomId("obs_", 12); }
       S.demographics = { age_band: $("demo-age").value, vision_corrected: $("demo-vision").value, lang: $("demo-lang").value };
+      loadParts();
       saveLocal();
-      $("btn-demo").disabled = true;
-      requestPlan().then(function (d) { $("btn-demo").disabled = false; if (d) { show("screen-instr"); } });
+      showStudyChoice();
+    });
+    var studyBtns = document.querySelectorAll(".study-opt");
+    for (var k = 0; k < studyBtns.length; k++) {
+      studyBtns[k].addEventListener("click", function (ev) { chooseStudy(ev.currentTarget.getAttribute("data-study")); });
+    }
+    $("btn-second-part").addEventListener("click", startSecondPart);
+    $("btn-finish-both").addEventListener("click", function () {
+      $("second-part-box").classList.add("hidden");
+      $("end-later-note").textContent = t("second_part_later_note", { s: t(S.parts.pending === "grass" ? "study_grass_name" : "study_mixed_name") });
+      saveLocal();
     });
     $("btn-fullscreen").addEventListener("click", goFullscreen);
     $("btn-small-fullscreen").addEventListener("click", function () { goFullscreen(); setTimeout(checkScreen, 600); });
@@ -443,7 +557,7 @@
       if ($("screen-trial").classList.contains("hidden")) { return; }
       if (ev.key === "ArrowLeft") { ev.preventDefault(); answer("left"); }
       else if (ev.key === "ArrowRight") { ev.preventDefault(); answer("right"); }
-      else if (ev.key === " " || ev.code === "Space") { ev.preventDefault(); answer("undecided"); }
+      else if (ev.key === " " || ev.code === "Space" || ev.key === "ArrowDown") { ev.preventDefault(); answer("undecided"); }
     });
     window.addEventListener("resize", checkScreen);
     window.addEventListener("online", pumpQueue);
@@ -459,16 +573,29 @@
     sha256hex(navigator.userAgent || "").then(function (h) { S.ua_hash = h ? "sha256:" + h.slice(0, 32) : null; });
     show("screen-loading");
     $("screen-loading").querySelector("p").textContent = t("loading_plans");
+    function getJson(url, opt, fallback) {
+      if (!url) { return Promise.resolve(fallback); }
+      return fetch(url, opt).then(function (r) { if (!r.ok) { throw new Error(url); } return r.json(); })
+        .catch(function (e) { if (fallback === undefined) { throw e; } return fallback; });
+    }
     Promise.all([
-      fetch(C.PLANS_URL, { cache: "force-cache" }).then(function (r) { if (!r.ok) { throw new Error("plans"); } return r.json(); }),
-      fetch(C.CLIPS_INDEX_URL, { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; })
+      getJson(C.PLANS_URL, { cache: "force-cache" }),
+      getJson(C.CLIPS_INDEX_URL, { cache: "no-store" }, {}),
+      getJson(C.PLANS_GRASS_URL, { cache: "force-cache" }, null),
+      getJson(C.CLIPS_INDEX_GRASS_URL, { cache: "no-store" }, {})
     ]).then(function (res) {
-      S.plans = res[0]; S.clips = res[1] || {};
+      S.plansAll.mixed = res[0]; S.plansAll.grass = res[2]; S.plans = res[0];
+      S.clips = {};
+      [res[1], res[3]].forEach(function (m) { Object.keys(m || {}).forEach(function (k) { S.clips[k] = m[k]; }); });
+      if (!S.plansAll.grass) { var g = $("study-opt-grass"); if (g) { g.classList.add("hidden"); } var b = $("study-opt-both"); if (b) { b.classList.add("hidden"); } }
+      loadParts();
       if (saved && saved.session_id && saved.phase === "main" && saved.mode === C.MODE) {
         // resume an interrupted session from the first unanswered trial (plan is static, no server call needed)
         var plan = planById(saved.plan_id);
         if (plan && saved.next_index < plan.trials.length) {
           S.plan = plan; S.plan_id = saved.plan_id; S.round = saved.round; S.session_id = saved.session_id;
+          S.study = saved.study || studyOfPlanId(saved.plan_id); S.choice = saved.choice || S.study;
+          document.body.className = "study-" + S.study;
           S.next_index = saved.next_index; S.session_number = saved.session_number || 1; S.start_ts = saved.start_ts;
           S.demographics = saved.demographics; S.nTarget = plan.trials.length; S.resumed = true;
           show("screen-message");

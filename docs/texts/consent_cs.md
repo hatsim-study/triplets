@@ -1,10 +1,9 @@
 # Informovaný souhlas s účastí v online studii
 
 **Název studie:** Vnímání podobnosti dynamických vizuálních materiálů (trojicová úloha)
-**Verze dokumentu:** consent_cs v1.0, 10. 10. 2026 (hodnota pole `consent_version` v záznamu sezení)
-**Správce osobních údajů:** [DOPLNÍ AUTOR: České vysoké učení technické v Praze, fakulta, pracoviště, adresa]
-**Řešitel / kontaktní osoba:** [DOPLNÍ AUTOR: jméno, pracoviště, e-mail]
-**Etická komise:** [DOPLNÍ AUTOR: název komise, číslo a datum vyjádření]
+**Verze dokumentu:** consent_cs v1.1, 14. 10. 2026 (hodnota pole `consent_version` v záznamu sezení)
+**Správce osobních údajů:** České vysoké učení technické v Praze (ČVUT), Jugoslávských partyzánů 1580/3, 160 00 Praha 6
+**Řešitel / kontaktní osoba:** Radek Richtr, Fakulta informačních technologií ČVUT v Praze, richtrad@fit.cvut.cz
 
 Před zahájením si prosím přečtěte následující informace. Podrobnější verzi (včetně často kladených otázek) najdete v informačním listu, který je dostupný odkazem pod tímto textem. Pokud některé části nerozumíte, obraťte se před zahájením na řešitele.
 
@@ -24,7 +23,7 @@ Studie zkoumá, jak lidé vnímají podobnost krátkých videí přírodních sc
 
 Účast je zcela dobrovolná. Můžete ji kdykoli ukončit zavřením okna prohlížeče, bez udání důvodu a bez jakýchkoli důsledků. Neúplná sezení se do hlavní analýzy nezahrnují.
 
-Po dokončení sezení obdržíte **kód dokončení**. Pomocí tohoto kódu můžete do [DOPLNÍ AUTOR: datum, např. uzavření sběru dat] požádat o smazání svých odpovědí (viz bod 6). Bez tohoto kódu nelze Vaše odpovědi zpětně dohledat, protože data jsou pseudonymní.
+Po dokončení sezení obdržíte **kód dokončení**. Pomocí tohoto kódu můžete do 9. 11. 2026 požádat o smazání svých odpovědí (viz bod 6). Bez tohoto kódu nelze Vaše odpovědi zpětně dohledat, protože data jsou pseudonymní.
 
 ## 4. Rizika a nepohodlí
 
@@ -34,22 +33,21 @@ Studie nepřináší rizika nad rámec běžného sledování videa na počíta�
 
 ## 5. Odměna
 
-[DOPLNÍ AUTOR: Za účast není poskytována odměna. / Studenti předmětu … mohou získat … kreditů po zadání kódu dokončení v …]
+Za účast není poskytována odměna.
 
 ## 6. Ochrana osobních údajů (GDPR)
 
 - **Nezaznamenáváme** Vaše jméno, e-mail, IP adresu ani jiné přímé identifikátory.
 - Při prvním spuštění Vám prohlížeč přidělí náhodný pseudonymní identifikátor (`observer_id`), který slouží jen ke spojení úloh v rámci sezení a k tomu, abyste stejnou trojici videí neviděl(a) dvakrát.
 - Ukládáme: Vaše volby, reakční časy, pořadí a identifikátory zobrazených videí, časové značky, technické údaje o přehrávání, rozlišení obrazovky, typ prohlížeče (user agent) a tři výše uvedené údaje (věková kategorie, korekce zraku, jazyk).
-- Právním základem zpracování je [DOPLNÍ AUTOR: souhlas podle čl. 6 odst. 1 písm. a) GDPR / plnění úkolu ve veřejném zájmu – vědecký výzkum podle čl. 6 odst. 1 písm. e) GDPR]. Údaje nejsou předávány třetím stranám ani mimo EU; [DOPLNÍ AUTOR: upřesnit umístění serveru].
-- Pseudonymní surová data budou uchována po dobu [DOPLNÍ AUTOR: např. 10 let] na zabezpečeném úložišti správce.
+- Právním základem zpracování je souhlas subjektu údajů podle čl. 6 odst. 1 písm. a) GDPR. Stránka studie běží na GitHub Pages (GitHub, Inc.); odpovědi se ukládají do soukromé Google tabulky v účtu řešitele. Provoz těchto služeb zahrnuje zpracování údajů jejich poskytovateli. Umístění zpracování výhradně v EU není pro toto nasazení zaručeno.
+- Pseudonymní surová data budou uchována po dobu 10 let na zabezpečeném úložišti správce.
 - **Anonymní data** (volby na úrovni trojic a sezení, bez jakéhokoli identifikátoru umožňujícího zpětnou identifikaci) budou zveřejněna jako součást vědecké publikace, aby výsledky mohly být nezávisle ověřeny. Zveřejněná data nelze s Vaší osobou spojit.
-- Máte právo na přístup k údajům, jejich opravu, výmaz a omezení zpracování; protože data jsou pseudonymní, lze tato práva uplatnit jen do [DOPLNÍ AUTOR: datum] a jen s kódem dokončení. Máte právo podat stížnost u Úřadu pro ochranu osobních údajů. Pověřenec pro ochranu osobních údajů správce: [DOPLNÍ AUTOR: kontakt].
+- Máte právo na přístup k údajům, jejich opravu, výmaz a omezení zpracování; protože data jsou pseudonymní, lze tato práva uplatnit jen do 9. 11. 2026 a jen s kódem dokončení. Máte právo podat stížnost u Úřadu pro ochranu osobních údajů. Pověřenec pro ochranu osobních údajů správce: dpo@cvut.cz (https://www.cvut.cz/ochrana-osobnich-udaju-gdpr).
 
 ## 7. Kontakt
 
-Dotazy k průběhu studie, technické problémy a žádosti o smazání dat: [DOPLNÍ AUTOR: řešitel, e-mail].
-Dotazy k etickým aspektům studie: [DOPLNÍ AUTOR: etická komise, kontakt].
+Dotazy k průběhu studie, technické problémy a žádosti o smazání dat: Radek Richtr, richtrad@fit.cvut.cz.
 
 ---
 

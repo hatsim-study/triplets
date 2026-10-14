@@ -4,1490 +4,1703 @@
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_01",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_02",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_03",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_04",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_05",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_06",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_07",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_08",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_09",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_10",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_11",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_12",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_13",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_14",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_15",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_16",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_17",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_18",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_19",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_20",
 "round": "R1",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_21",
 "round": "R1",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_22",
 "round": "R1",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_23",
 "round": "R1",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_24",
 "round": "R1",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_25",
 "round": "R1",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R1_26",
 "round": "R1",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_00",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_01",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_02",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_03",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_04",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_05",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_06",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_07",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_08",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_09",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_10",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_11",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_12",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_13",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_14",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_15",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_16",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_17",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_18",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_19",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_20",
 "round": "R2",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_21",
 "round": "R2",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_22",
 "round": "R2",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_23",
 "round": "R2",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_24",
 "round": "R2",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_25",
 "round": "R2",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R2_26",
 "round": "R2",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_00",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_01",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_02",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_03",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_04",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_05",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_06",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_07",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_08",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_09",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_10",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_11",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_12",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_13",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_14",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_15",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_16",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_17",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_18",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_19",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_20",
 "round": "R3",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_21",
 "round": "R3",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_22",
 "round": "R3",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_23",
 "round": "R3",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_24",
 "round": "R3",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_25",
 "round": "R3",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R3_26",
 "round": "R3",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_00",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_01",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_02",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_03",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_04",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_05",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_06",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_07",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_08",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_09",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_10",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_11",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_12",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_13",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_14",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_15",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_16",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_17",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_18",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_19",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_20",
 "round": "R4",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_21",
 "round": "R4",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_22",
 "round": "R4",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_23",
 "round": "R4",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_24",
 "round": "R4",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_25",
 "round": "R4",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R4_26",
 "round": "R4",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_00",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_01",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_02",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_03",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_04",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_05",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_06",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_07",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_08",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_09",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_10",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_11",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_12",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_13",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_14",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_15",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_16",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_17",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_18",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_19",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_20",
 "round": "R5",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_21",
 "round": "R5",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_22",
 "round": "R5",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_23",
 "round": "R5",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_24",
 "round": "R5",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_25",
 "round": "R5",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R5_26",
 "round": "R5",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_00",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_01",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_02",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_03",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_04",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_05",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_06",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_07",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_08",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_09",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_10",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_11",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_12",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_13",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_14",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_15",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_16",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_17",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_18",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_19",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_20",
 "round": "R6",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_21",
 "round": "R6",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_22",
 "round": "R6",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_23",
 "round": "R6",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_24",
 "round": "R6",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_25",
 "round": "R6",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R6_26",
 "round": "R6",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_00",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_01",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_02",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_03",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_04",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_05",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_06",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_07",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_08",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_09",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_10",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_11",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_12",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_13",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_14",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_15",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_16",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_17",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_18",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_19",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_20",
 "round": "R7",
 "panel": 1,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_21",
 "round": "R7",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_22",
 "round": "R7",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_23",
 "round": "R7",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_24",
 "round": "R7",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_25",
 "round": "R7",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "R7_26",
 "round": "R7",
 "panel": 1,
 "n_trials": 60,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P1_00",
 "round": "P1",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P1_01",
 "round": "P1",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P1_02",
 "round": "P1",
 "panel": 2,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P2_00",
 "round": "P2",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P2_01",
 "round": "P2",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P2_02",
 "round": "P2",
 "panel": 2,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P3_00",
 "round": "P3",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P3_01",
 "round": "P3",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P3_02",
 "round": "P3",
 "panel": 2,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P4_00",
 "round": "P4",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P4_01",
 "round": "P4",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P4_02",
 "round": "P4",
 "panel": 2,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P5_00",
 "round": "P5",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P5_01",
 "round": "P5",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P5_02",
 "round": "P5",
 "panel": 2,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P6_00",
 "round": "P6",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P6_01",
 "round": "P6",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P6_02",
 "round": "P6",
 "panel": 2,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P7_00",
 "round": "P7",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P7_01",
 "round": "P7",
 "panel": 2,
 "n_trials": 62,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "P7_02",
 "round": "P7",
 "panel": 2,
 "n_trials": 61,
-"mode": "main"
+"mode": "main",
+"study": "mixed"
 },
 {
 "plan_id": "PILOT_0",
 "round": "PILOT",
 "panel": 1,
 "n_trials": 20,
-"mode": "pilot"
+"mode": "pilot",
+"study": "mixed"
 },
 {
 "plan_id": "PILOT_1",
 "round": "PILOT",
 "panel": 1,
 "n_trials": 20,
-"mode": "pilot"
+"mode": "pilot",
+"study": "mixed"
 },
 {
 "plan_id": "PILOT_2",
 "round": "PILOT",
 "panel": 1,
 "n_trials": 20,
-"mode": "pilot"
+"mode": "pilot",
+"study": "mixed"
 }
 ]

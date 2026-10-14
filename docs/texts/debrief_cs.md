@@ -1,6 +1,6 @@
 # Závěrečné poděkování a vysvětlení
 
-<!-- Verze debrief_cs v1.0, 10. 10. 2026. Zobrazuje se po 60. úloze spolu s kódem dokončení. Text neprozrazuje hypotézy o konkrétních metrikách ani mechaniku kontrolních a opakovaných trojic nad rámec obecného popisu. -->
+<!-- Verze debrief_cs v1.0, 10. 10. 2026. Zobrazuje se po poslední úloze spolu s kódem dokončení. Text neprozrazuje hypotézy o konkrétních metrikách ani mechaniku kontrolních a opakovaných trojic nad rámec obecného popisu. -->
 
 ## Děkujeme
 
@@ -11,7 +11,7 @@ Dokončil(a) jste sezení. Vaše odpovědi byly uloženy.
 Kód si prosím uložte (zkopírujte nebo vyfoťte). Slouží ke dvěma účelům:
 
 1. pokud budete chtít své odpovědi nechat smazat, uveďte jej v žádosti (viz níže);
-2. [DOPLNÍ AUTOR: pokud se za účast uznává kredit: zadejte jej do … do …] / [pokud ne, bod vypustit].
+2.  / [pokud ne, bod vypustit].
 
 ## O co ve studii šlo
 
@@ -25,16 +25,15 @@ Které konkrétní počítačové míry porovnáváme a jaký výsledek očekáv
 
 Vaše odpovědi jsou uloženy pod náhodným pseudonymním identifikátorem, bez jména, e-mailu a IP adresy. Po skončení sběru budou spojeny s odpověďmi ostatních účastníků a anonymní datový soubor (volby po trojicích, reakční časy, věková kategorie, korekce zraku, jazyk) bude zveřejněn jako součást publikace. Z tohoto souboru Vás nelze identifikovat.
 
-**Odvolání dat:** Své odpovědi můžete nechat smazat **do [DOPLNÍ AUTOR: datum]**. Napište na [DOPLNÍ AUTOR: e-mail] a uveďte kód dokončení; jiný způsob dohledání Vašich dat neexistuje. Po tomto datu budou data anonymizována a sloučena, a smazání již nebude technicky možné.
+**Odvolání dat:** Své odpovědi můžete nechat smazat **do 9. 11. 2026**. Napište na richtrad@fit.cvut.cz a uveďte kód dokončení; jiný způsob dohledání Vašich dat neexistuje. Po tomto datu budou data anonymizována a sloučena, a smazání již nebude technicky možné.
 
 ## Druhé sezení
 
-Pokud chcete, můžete absolvovat ještě jedno sezení (nejvýše dvě celkem). Použijte stejný prohlížeč a zařízení, nebo při spuštění zadejte výše uvedený kód dokončení, abyste neviděl(a) stejné trojice znovu. [DOPLNÍ AUTOR: případné omezení, např. „nejdříve následující den“, nebo větu vypustit.]
+Pokud chcete, můžete absolvovat ještě jedno sezení (nejvýše dvě celkem). Použijte stejný prohlížeč a zařízení, nebo při spuštění zadejte výše uvedený kód dokončení, abyste neviděl(a) stejné trojice znovu.
 
 ## Kontakt
 
-- Dotazy ke studii a žádosti o smazání dat: [DOPLNÍ AUTOR: řešitel, e-mail]
-- Etické aspekty: [DOPLNÍ AUTOR: etická komise, kontakt]
-- Odkaz na publikaci po jejím vydání: [DOPLNÍ AUTOR: URL]
+- Dotazy ke studii a žádosti o smazání dat: Radek Richtr, richtrad@fit.cvut.cz
+- Odkaz na publikaci po jejím vydání: https://hatsim-study.github.io/triplets/
 
 Nyní můžete okno zavřít. Ještě jednou děkujeme za Váš čas.

@@ -25,6 +25,7 @@ window.I18N = {
       "<p>Vaším úkolem je odpovědět na otázku:</p>" +
       "<p><b>„Který z dolních klipů je celkovým dynamickým vizuálním charakterem podobnější hornímu?“</b></p>" +
       "<p>Posuzujte celkový dojem z <i>pohybu a vzhledu</i> – jak se textura hýbe, jak rychle, jakým způsobem, jak vypadá. Nehledejte stejný objekt ani stejné místo; jde o podobnost dynamického vizuálního charakteru.</p>" +
+      "<p><b>{{STUDY_SENTENCE}}</b></p>" +
       "<ul><li>Odpovídejte klávesou <b>←</b> (levý) nebo <b>→</b> (pravý), případně tlačítky.</li>" +
       "<li>Pokud opravdu nedokážete rozhodnout, stiskněte <b>mezerník</b> („nelze rozhodnout“). Používejte to prosím jen výjimečně.</li>" +
       "<li>Odpovědět lze až po alespoň 2 sekundách přehrávání – tlačítka se do té doby neaktivují.</li>" +
@@ -77,6 +78,22 @@ window.I18N = {
     no_plan_title: "Studie je momentálně plná",
     no_plan_text: "Všechna sezení jsou obsazena nebo dokončena. Zkuste to prosím později – děkujeme!",
     loading_plans: "Načítání plánů sezení…",
+    study_title: "Výběr studie",
+    study_intro: "Nabízíme dvě krátké studie se stejnou úlohou. Vyberte, čeho se chcete zúčastnit:",
+    study_grass_name: "Studie tráva",
+    study_grass_desc: "24–40 úloh, přibližně 4–8 minut. Všechna videa jsou tráva a keře; jde o jemné rozdíly v pohybu a struktuře.",
+    study_mixed_name: "Studie smíšené scény",
+    study_mixed_desc: "{{N_TRIALS}} úloh, přibližně {{DURATION}}. Voda, listí, kouř, vlajky, stroje a další dynamické textury.",
+    study_both_name: "Obojí",
+    study_both_desc: "Obě části po sobě (pořadí náhodné). Po první části můžete pokračovat hned, nebo druhou dokončit jindy.",
+    study_pending_note: "Při minulé návštěvě jste dokončili první část; zbývá: {s}.",
+    instr_study_grass: "V této části jsou všechna videa tráva a keře. Jde o jemné rozdíly v pohybu (vítr, rytmus vlnění) a ve struktuře porostu – posuzujte je stejně pečlivě jako výrazné rozdíly.",
+    instr_study_mixed: "V této části jsou videa různých dynamických textur (voda, listí, kouř, vlajky, stroje). Nejde o to, zda je na videích totéž, ale o celkový dynamický vizuální charakter.",
+    second_part_title: "Druhá část",
+    second_part_text: "Zvolili jste obě studie. Chcete nyní pokračovat druhou částí ({s})? Druhou část lze také dokončit jindy – stačí se vrátit na tuto stránku ve stejném prohlížeči nebo zadat svůj kód pozorovatele.",
+    second_part_start: "Pokračovat druhou částí",
+    second_part_later: "Skončit, druhou část dokončím jindy",
+    second_part_later_note: "Zbývající část ({s}) se vám nabídne při příští návštěvě.",
   },
   en: {
     brand: "Dynamic texture perception study",
@@ -101,6 +118,7 @@ window.I18N = {
       "<p>Your task is to answer the question:</p>" +
       "<p><b>“Which of the two lower clips is more similar to the upper one in its overall dynamic visual character?”</b></p>" +
       "<p>Judge the overall impression of <i>motion and appearance</i> – how the texture moves, how fast, in what manner, and how it looks. Do not look for the same object or the same place; it is about similarity of the dynamic visual character.</p>" +
+      "<p><b>{{STUDY_SENTENCE}}</b></p>" +
       "<ul><li>Answer with the <b>←</b> (left) or <b>→</b> (right) key, or with the buttons.</li>" +
       "<li>If you really cannot decide, press the <b>space bar</b> (“cannot decide”). Please use it only exceptionally.</li>" +
       "<li>You can answer only after at least 2 seconds of playback – the buttons are inactive until then.</li>" +
@@ -153,5 +171,21 @@ window.I18N = {
     no_plan_title: "The study is currently full",
     no_plan_text: "All sessions are taken or completed. Please try again later – thank you!",
     loading_plans: "Loading session plans…",
+    study_title: "Study selection",
+    study_intro: "We offer two short studies with the same task. Choose what you would like to take part in:",
+    study_grass_name: "Grass study",
+    study_grass_desc: "24–40 trials, about 4–8 minutes. All clips show grass and shrubs; the differences in motion and structure are subtle.",
+    study_mixed_name: "Mixed scenes study",
+    study_mixed_desc: "{{N_TRIALS}} trials, about {{DURATION}}. Water, foliage, smoke, flags, machinery and other dynamic textures.",
+    study_both_name: "Both",
+    study_both_desc: "Both parts one after the other (random order). After the first part you can continue right away or finish the second part another day.",
+    study_pending_note: "Last time you completed the first part; remaining: {s}.",
+    instr_study_grass: "In this part all clips show grass and shrubs. The differences are subtle – in motion (wind, rhythm of the swaying) and in the structure of the vegetation – judge them as carefully as pronounced differences.",
+    instr_study_mixed: "In this part the clips show various dynamic textures (water, foliage, smoke, flags, machinery). It is not about whether the clips show the same thing, but about the overall dynamic visual character.",
+    second_part_title: "Second part",
+    second_part_text: "You chose both studies. Would you like to continue with the second part ({s}) now? You can also finish it another day – just return to this page in the same browser or enter your observer code.",
+    second_part_start: "Continue with the second part",
+    second_part_later: "Finish now, I will do the second part another day",
+    second_part_later_note: "The remaining part ({s}) will be offered on your next visit.",
   }
 };

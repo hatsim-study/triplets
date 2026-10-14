@@ -11,6 +11,10 @@ Na obrazovce budou tři krátká videa přehrávaná ve smyčce:
 
 Všechna tři videa běží současně a opakují se, dokud neodpovíte. Nemají zvuk.
 
+## 1a. Dvě studie, stejná úloha
+
+Na úvodní obrazovce volíte mezi **studií tráva** (40 úloh, přibližně 6–8 minut; všechna videa jsou tráva a keře — rozdíly v pohybu, například ve větru a rytmu vlnění, a ve struktuře porostu jsou jemné, posuzujte je stejně pečlivě jako výrazné rozdíly), **studií smíšené scény** ({{N_TRIALS}} úloh, přibližně {{DURATION}}; voda, listí, kouř, vlajky, stroje a další dynamické textury) a možností **obojí** (obě části po sobě v náhodném pořadí; po první části lze pokračovat hned, nebo druhou část dokončit jindy). Otázka i ovládání jsou v obou částech stejné.
+
 ## 2. Otázka
 
 V každé úloze odpovídáte na tutéž otázku:

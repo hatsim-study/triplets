@@ -1,0 +1,27 @@
+{
+ "seed": 20261013,
+ "n_triplets": 600,
+ "n_attention": 30,
+ "n_panel2": 120,
+ "n_plans": 154,
+ "rounds": 7,
+ "trials_per_plan": [
+  24,
+  28,
+  40
+ ],
+ "composition": {
+  "same": 200,
+  "mixed": 200,
+  "other": 200
+ },
+ "anchor_use": {
+  "min": 8,
+  "max": 9
+ },
+ "candidate_use": {
+  "min": 12,
+  "max": 27
+ },
+ "plans_sha256": "dac7e73e185f0e221eeca24d38f36995783ef859910bc814bd7745aef9c1b3f1"
+}
