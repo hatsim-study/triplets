@@ -16,12 +16,12 @@
   "other": 200
  },
  "anchor_use": {
-  "min": 8,
-  "max": 9
+  "min": 9,
+  "max": 10
  },
  "candidate_use": {
-  "min": 12,
-  "max": 27
+  "min": 13,
+  "max": 32
  },
- "plans_sha256": "dac7e73e185f0e221eeca24d38f36995783ef859910bc814bd7745aef9c1b3f1"
+ "plans_sha256": "1d4f2af68e4b9e4419511600584d5c7510240ce899890e5c3b2dc4a622dc7b9b"
 }

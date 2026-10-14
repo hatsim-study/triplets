@@ -1,0 +1,20 @@
+{
+ "seed": 20261014,
+ "excluded": {
+  "6485510": "A people clearly visible (plaza, walking)",
+  "6485610": "A people clearly visible (plaza, walking)",
+  "6486210": "A people clearly visible (pool)",
+  "6489c10": "C manipulated objects (market stall, mirrors, person)"
+ },
+ "n_dropped": 13,
+ "n_replaced": 62,
+ "n_triplets": {
+  "main": 1194,
+  "sdyn": 348,
+  "attention": 79,
+  "pilot": 60
+ },
+ "n_clips": 563,
+ "candidate_use_max": 23,
+ "candidate_use_mean": 19.125
+}

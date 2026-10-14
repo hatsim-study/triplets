@@ -5,8 +5,8 @@
  "fresh_per_plan": 51,
  "repeats": 6,
  "attention": 3,
- "n_eligible_triplets": 1398,
- "n_panel2": 158,
+ "n_eligible_triplets": 1386,
+ "n_panel2": 156,
  "sdyn_anchors_kept": [
   "6450210",
   "6450310",
@@ -25,7 +25,6 @@
   "6481k10",
   "6481l10",
   "6481o10",
-  "6486210",
   "6486510",
   "6486b10",
   "6487410",
@@ -42,12 +41,13 @@
   "648a910",
   "648ab10"
  ],
- "n_sdyn_triplets": 198,
+ "n_sdyn_triplets": 192,
  "plan_sizes": [
   60,
-  61,
-  62
+  61
  ],
  "rule_second_session": "same round as first session (plans within a round are triplet-disjoint); never a P-round plan for an observer whose R-round plan contained that triplet -> enforced by same-round rule",
- "plans_sha256": "eeb9c655387d66bc81a11625384f950ff7ebea9b13c629819420d75a50f7f778"
+ "pilot_plans": "PILOT_0..2 and practice copied unchanged from plans v1 (seed 20261011)",
+ "version": "v2 audit 2026-10-14",
+ "plans_sha256": "d566ffaf8af32debfbe18c8bd0c3c4909cd400a2ad55d8ea60d5a3ef3c290689"
 }

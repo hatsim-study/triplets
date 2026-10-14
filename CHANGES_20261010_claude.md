@@ -60,3 +60,12 @@ Navržený commit (po commitu travní studie od webového vlákna): "Grass study
 
 - Úplný test prohlížečem zachytil starý počet úloh na obrazovce po cvičení; `practiceDone()` nyní znovu vykreslí délku a přestávku podle přiděleného plánu. Text přestávky nepředpokládá, že jde přesně o polovinu.
 - Doplněno při skutečném průchodu: debrief nezobrazuje autorské HTML komentáře, prázdnou variantu odměny ani nevyplněný token kódu. Ukáže se až po potvrzení posledních zápisů. Rozlišen kód pozorovatele pro návrat a kód dokončení pro odvolání dat. Exportér převádí číselně typované identifikátory klipů z Google Tabulek na text; původní surová data nezměněna.
+
+
+# Změny k nasazení (Claude, 14. 10. 2026, audit klipů) — commit přímo z sandboxu
+Soubory v tomto commitu: docs/plans.json (v2, sha256 d566ffaf…), docs/clips_index.json (479 klipů, stejné URL), docs/plans_grass.json (v2, sha256 1d4f2af6…), docs/clips_index_grass.json (64 klipů), plan_index.json/.csv, plan_index_grass.json/.csv, plans_meta.json, plans_grass_meta.json, docs/i18n.js (věta o kontrolních scénách), docs/texts/instructions_cs/en.md v1.1, docs/index.html (cache ?v=20261014-audit), PREREGISTRACE_v1.2_changelog.md (dodatek 5), stimuli_v2/ (triplets.csv, patch_log.csv, patch_triplets_v2.py, triplets_grass.csv, grass_clips.csv, grass_clips_removed.csv).
+
+**Úkoly pro Codex (Google):**
+1. List `plans` v tabulce: plan_id zůstávají stejné, ale u 98 smíšených plánů se změnilo n_trials (61→60 u 84, 62→61 u 14). register_plans.py existující plan_id přeskakuje, proto je nutné řádky smíšených plánů (R*/P*, ne PILOT_*) smazat a znovu importovat `plan_index.csv` (nebo spustit `register_plans.py --index plan_index.json` po smazání). Travní plány: n_trials beze změny, přeregistrace není nutná; pro jistotu porovnejte `plan_index_grass.csv` s listem.
+2. Nasazené klipy netřeba měnit: v2 používá jen klipy, které už jsou v clips-a/clips-b/clips-grass. Nepoužité klipy (6485510, 6485610, 6486210 + __1x/__1p5x/__2x, 6489c10; G_MVI_9942_*, G_MVI_9943_*, G_MVI_5830_2/_3) lze z repozitářů smazat, ale není to nutné.
+3. Dosud zaznamenaná sezení (pilot, QA observer qa_grass_deploy_…) byla s plány v1 — v exportu označit `plans_version=v1`; vše po tomto commitu je v2. MODE zůstává pilot, dokud neproběhne lidský travní pilot a check_pilot_session.py.

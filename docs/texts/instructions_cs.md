@@ -1,6 +1,6 @@
 # Instrukce k úloze
 
-<!-- Verze instructions_cs v1.0, 10. 10. 2026. Znění otázky v oddílu 2 je převzato doslova z preregistrace v1.1, oddíl 2, a nesmí se měnit. Klávesové zkratky v oddílu 3 musí odpovídat implementaci ve web/; při změně v aplikaci upravte i tento text a verzi. Oddíl 5 (cvičné trojice) vypusťte, pokud aplikace cvičnou část neobsahuje. -->
+<!-- Verze instructions_cs v1.1, 14. 10. 2026 (doplněna věta o kontrolních téměř statických scénách).10. 2026. Znění otázky v oddílu 2 je převzato doslova z preregistrace v1.1, oddíl 2, a nesmí se měnit. Klávesové zkratky v oddílu 3 musí odpovídat implementaci ve web/; při změně v aplikaci upravte i tento text a verzi. Oddíl 5 (cvičné trojice) vypusťte, pokud aplikace cvičnou část neobsahuje. -->
 
 ## 1. Co uvidíte
 
@@ -50,6 +50,7 @@ Doporučení: nechte videa proběhnout alespoň jednou dokola (zhruba několik s
 - Sezení má **{{N_TRIALS}} úloh**. Počítadlo v horní části ukazuje, kolik jich zbývá.
 - {{BREAK_SENTENCE}}
 - Některé trojice se v průběhu sezení **zopakují**, případně s prohozenými stranami. Je to záměr. Nesnažte se vzpomenout, co jste odpověděl(a) minule; odpovídejte vždy podle aktuálního dojmu.
+- Některá videa se **téměř nehýbou**. Je to záměr — jde o kontrolní scény. Posuzujte je stejně jako ostatní: podle celkového charakteru, tedy i podle toho, že se téměř nehýbou.
 - U některých trojic se Vám bude odpověď zdát **zjevná**. I tyto trojice jsou součástí úlohy; odpovězte na ně stejně jako na ostatní.
 - Jednotlivé úlohy nemají časový limit. Pokud potřebujete sezení přerušit, zavřete okno; nedokončené sezení se nezapočítává a můžete začít nové (celkem nejvýše dvě sezení).
 - Neměňte během sezení velikost okna a nepřepínejte na jiné aplikace; videa by se mohla zastavit. Pokud se video nepřehrává, aplikace to zaznamená — pokračujte v úloze, nebo úlohu přeskočte tlačítkem „Problém s přehráváním“ [POZN. PRO VÝVOJ: pokud tlačítko není implementováno, větu odstranit].

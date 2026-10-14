@@ -1,1234 +1,1234 @@
 [
-{
-"plan_id": "GR1_00",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_01",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_02",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_03",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_04",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_05",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_06",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_07",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_08",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_09",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_10",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_11",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_12",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_13",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_14",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_15",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_16",
-"round": "GR1",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR1_17",
-"round": "GR1",
-"panel": 1,
-"n_trials": 28,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_00",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_01",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_02",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_03",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_04",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_05",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_06",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_07",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_08",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_09",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_10",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_11",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_12",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_13",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_14",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_15",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_16",
-"round": "GR2",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR2_17",
-"round": "GR2",
-"panel": 1,
-"n_trials": 28,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_00",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_01",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_02",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_03",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_04",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_05",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_06",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_07",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_08",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_09",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_10",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_11",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_12",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_13",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_14",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_15",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_16",
-"round": "GR3",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR3_17",
-"round": "GR3",
-"panel": 1,
-"n_trials": 28,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_00",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_01",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_02",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_03",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_04",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_05",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_06",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_07",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_08",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_09",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_10",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_11",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_12",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_13",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_14",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_15",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_16",
-"round": "GR4",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR4_17",
-"round": "GR4",
-"panel": 1,
-"n_trials": 28,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_00",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_01",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_02",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_03",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_04",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_05",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_06",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_07",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_08",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_09",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_10",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_11",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_12",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_13",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_14",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_15",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_16",
-"round": "GR5",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR5_17",
-"round": "GR5",
-"panel": 1,
-"n_trials": 28,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_00",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_01",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_02",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_03",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_04",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_05",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_06",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_07",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_08",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_09",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_10",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_11",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_12",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_13",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_14",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_15",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_16",
-"round": "GR6",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR6_17",
-"round": "GR6",
-"panel": 1,
-"n_trials": 28,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_00",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_01",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_02",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_03",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_04",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_05",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_06",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_07",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_08",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_09",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_10",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_11",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_12",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_13",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_14",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_15",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_16",
-"round": "GR7",
-"panel": 1,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GR7_17",
-"round": "GR7",
-"panel": 1,
-"n_trials": 28,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP1_00",
-"round": "GP1",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP1_01",
-"round": "GP1",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP1_02",
-"round": "GP1",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP1_03",
-"round": "GP1",
-"panel": 2,
-"n_trials": 24,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP2_00",
-"round": "GP2",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP2_01",
-"round": "GP2",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP2_02",
-"round": "GP2",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP2_03",
-"round": "GP2",
-"panel": 2,
-"n_trials": 24,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP3_00",
-"round": "GP3",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP3_01",
-"round": "GP3",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP3_02",
-"round": "GP3",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP3_03",
-"round": "GP3",
-"panel": 2,
-"n_trials": 24,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP4_00",
-"round": "GP4",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP4_01",
-"round": "GP4",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP4_02",
-"round": "GP4",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP4_03",
-"round": "GP4",
-"panel": 2,
-"n_trials": 24,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP5_00",
-"round": "GP5",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP5_01",
-"round": "GP5",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP5_02",
-"round": "GP5",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP5_03",
-"round": "GP5",
-"panel": 2,
-"n_trials": 24,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP6_00",
-"round": "GP6",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP6_01",
-"round": "GP6",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP6_02",
-"round": "GP6",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP6_03",
-"round": "GP6",
-"panel": 2,
-"n_trials": 24,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP7_00",
-"round": "GP7",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP7_01",
-"round": "GP7",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP7_02",
-"round": "GP7",
-"panel": 2,
-"n_trials": 40,
-"mode": "main",
-"study": "grass"
-},
-{
-"plan_id": "GP7_03",
-"round": "GP7",
-"panel": 2,
-"n_trials": 24,
-"mode": "main",
-"study": "grass"
-}
+ {
+  "plan_id": "GR1_00",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_01",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_02",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_03",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_04",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_05",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_06",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_07",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_08",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_09",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_10",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_11",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_12",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_13",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_14",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_15",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_16",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR1_17",
+  "round": "GR1",
+  "panel": 1,
+  "n_trials": 28,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_00",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_01",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_02",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_03",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_04",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_05",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_06",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_07",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_08",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_09",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_10",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_11",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_12",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_13",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_14",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_15",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_16",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR2_17",
+  "round": "GR2",
+  "panel": 1,
+  "n_trials": 28,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_00",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_01",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_02",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_03",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_04",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_05",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_06",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_07",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_08",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_09",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_10",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_11",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_12",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_13",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_14",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_15",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_16",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR3_17",
+  "round": "GR3",
+  "panel": 1,
+  "n_trials": 28,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_00",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_01",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_02",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_03",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_04",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_05",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_06",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_07",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_08",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_09",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_10",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_11",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_12",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_13",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_14",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_15",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_16",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR4_17",
+  "round": "GR4",
+  "panel": 1,
+  "n_trials": 28,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_00",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_01",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_02",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_03",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_04",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_05",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_06",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_07",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_08",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_09",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_10",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_11",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_12",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_13",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_14",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_15",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_16",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR5_17",
+  "round": "GR5",
+  "panel": 1,
+  "n_trials": 28,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_00",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_01",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_02",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_03",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_04",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_05",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_06",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_07",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_08",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_09",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_10",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_11",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_12",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_13",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_14",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_15",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_16",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR6_17",
+  "round": "GR6",
+  "panel": 1,
+  "n_trials": 28,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_00",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_01",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_02",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_03",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_04",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_05",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_06",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_07",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_08",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_09",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_10",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_11",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_12",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_13",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_14",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_15",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_16",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GR7_17",
+  "round": "GR7",
+  "panel": 1,
+  "n_trials": 28,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP1_00",
+  "round": "GP1",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP1_01",
+  "round": "GP1",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP1_02",
+  "round": "GP1",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP1_03",
+  "round": "GP1",
+  "panel": 2,
+  "n_trials": 24,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP2_00",
+  "round": "GP2",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP2_01",
+  "round": "GP2",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP2_02",
+  "round": "GP2",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP2_03",
+  "round": "GP2",
+  "panel": 2,
+  "n_trials": 24,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP3_00",
+  "round": "GP3",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP3_01",
+  "round": "GP3",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP3_02",
+  "round": "GP3",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP3_03",
+  "round": "GP3",
+  "panel": 2,
+  "n_trials": 24,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP4_00",
+  "round": "GP4",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP4_01",
+  "round": "GP4",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP4_02",
+  "round": "GP4",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP4_03",
+  "round": "GP4",
+  "panel": 2,
+  "n_trials": 24,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP5_00",
+  "round": "GP5",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP5_01",
+  "round": "GP5",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP5_02",
+  "round": "GP5",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP5_03",
+  "round": "GP5",
+  "panel": 2,
+  "n_trials": 24,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP6_00",
+  "round": "GP6",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP6_01",
+  "round": "GP6",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP6_02",
+  "round": "GP6",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP6_03",
+  "round": "GP6",
+  "panel": 2,
+  "n_trials": 24,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP7_00",
+  "round": "GP7",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP7_01",
+  "round": "GP7",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP7_02",
+  "round": "GP7",
+  "panel": 2,
+  "n_trials": 40,
+  "mode": "main",
+  "study": "grass"
+ },
+ {
+  "plan_id": "GP7_03",
+  "round": "GP7",
+  "panel": 2,
+  "n_trials": 24,
+  "mode": "main",
+  "study": "grass"
+ }
 ]

@@ -1,0 +1,78 @@
+triplet_id,action,reason
+M_test_6486210_0,dropped,anchor excluded
+M_test_6486210_1,dropped,anchor excluded
+M_test_6486210_2,dropped,anchor excluded
+M_test_6486210_3,dropped,anchor excluded
+M_test_6486210_4,dropped,anchor excluded
+M_test_6486210_5,dropped,anchor excluded
+S_6486210_T1,dropped,anchor excluded
+S_6486210_T2,dropped,anchor excluded
+S_6486210_T3,dropped,anchor excluded
+S_6486210_T4,dropped,anchor excluded
+S_6486210_T5,dropped,anchor excluded
+S_6486210_T6,dropped,anchor excluded
+A_test_6486210,dropped,anchor excluded
+M_test_6441610_5,replaced C,6489c10 -> 6481e10 (other_family)
+M_test_644b910_5,replaced B,6489c10 -> 648be10 (other_family)
+M_test_6450310_4,replaced B,6489c10 -> 6488210 (other_family)
+M_test_645d210_5,replaced C,6489c10 -> 6481e10 (other_family)
+M_test_645d410_4,replaced B,6489c10 -> 6481a10 (other_family)
+M_test_646c410_2,replaced C,6489c10 -> 6482410 (other_family)
+M_test_647b310_5,replaced B,6489c10 -> 6487110 (other_family)
+M_test_647bb10_4,replaced C,6489c10 -> 571e110 (other_family)
+M_test_6481i10_5,replaced C,6489c10 -> 648be10 (other_family)
+M_test_6482510_0,replaced C,6489c10 -> 6489610 (other_family)
+M_test_6482510_5,replaced B,6489c10 -> 6485110 (other_family)
+M_test_6485210_4,replaced B,6489c10 -> 6487610 (other_family)
+M_test_6486810_5,replaced B,6489c10 -> 647b510 (other_family)
+M_test_6487510_5,replaced C,6489c10 -> 6482910 (other_family)
+M_test_6487a10_4,replaced C,6489c10 -> 647b610 (other_family)
+M_test_6489210_5,replaced C,6489c10 -> 6486110 (other_family)
+M_test_6489b10_0,replaced B,6489c10 -> 54pb410 (same_class->fallback:other_family)
+M_test_6489b10_1,replaced B,6489c10 -> 6488a10 (same_class->fallback:other_family)
+M_test_6489b10_2,replaced B,6489c10 -> 6486910 (same_class->fallback:other_family)
+M_test_6489b10_3,replaced B,6489c10 -> 6486610 (same_class->fallback:other_family)
+M_train_54pg210_2,replaced C,6485610 -> 6484c10 (same_family)
+M_train_54pg210_3,replaced B,6485510 -> 6483610 (same_family)
+M_train_55fa210_5,replaced C,6485510 -> 644b510 (other_family)
+M_train_56ub110_3,replaced C,6485610 -> 6484710 (same_family)
+M_train_571b310_2,replaced B,6485610 -> 6484i10 (same_family)
+M_train_6440110_0,replaced C,6485510 -> 648df10 (other_family)
+M_train_644a210_5,replaced C,6485610 -> 6484g10 (other_family)
+M_train_644a610_4,replaced B,6485510 -> 55fb110 (other_family)
+M_train_644a610_5,replaced B,6485510 -> 55fc210 (other_family)
+M_train_644b110_4,replaced B,6485610 -> 644c310 (other_family)
+M_train_644c610_3,replaced B,6485610 -> 6484c10 (same_family)
+M_train_644cd10_0,replaced C,6485510 -> 6485710 (other_family)
+M_train_645a810_5,replaced C,6485610 -> 647a110 (other_family)
+M_train_645a910_1,replaced C,6485510 -> 646d310 (other_family)
+M_train_645b810_4,replaced C,6485510 -> 55fc310 (other_family)
+M_train_645b910_4,replaced C,6485610 -> 6484g10 (other_family)
+M_train_646a610_4,replaced B,6485610 -> 6483910 (other_family)
+M_train_646a610_5,replaced C,6485510 -> 648bf10 (other_family)
+M_train_647c110_0,replaced C,6485510 -> 55fc110 (other_family)
+M_train_647c210_4,replaced C,6485610 -> 644c310 (other_family)
+M_train_6482110_2,replaced B,6485510 -> 6483610 (same_family)
+M_train_6482c10_1,replaced B,6485610 -> 6488710 (same_class)
+M_train_6483510_0,replaced B,6485510 -> 6484i10 (same_class)
+M_train_6483810_4,replaced C,6485610 -> 6484710 (other_family)
+M_train_6483c10_2,replaced C,6485610 -> 6484810 (same_family)
+M_train_6484310_0,replaced B,6485510 -> 6483110 (same_class)
+M_train_6484h10_0,replaced B,6485510 -> 6482d10 (same_class)
+M_train_6484j10_0,replaced B,6485610 -> 6483110 (same_class)
+M_train_6485410_2,replaced B,6485510 -> 648d710 (same_family)
+M_train_6485810_1,replaced B,6485610 -> 6488710 (same_class)
+M_train_6488410_0,replaced B,6485610 -> 6484i10 (same_class)
+M_train_6488810_1,replaced B,6485510 -> 6484710 (same_class)
+M_train_648bb10_4,replaced B,6485510 -> 644c510 (other_family)
+M_train_648bc10_1,replaced C,6485610 -> 645b410 (other_family)
+M_train_648d510_3,replaced C,6485610 -> 6488d10 (same_family)
+M_train_648d610_3,replaced C,6485510 -> 6483a10 (same_family)
+M_train_648db10_1,replaced B,6485610 -> 6484c10 (same_class)
+A_test_648c110,replaced C,6489c10 -> 571f110 (other_family)
+A_test_648a910,replaced C,6489c10 -> 6481e10 (other_family)
+A_train_645b810,replaced C,6485610 -> 6484210 (other_family)
+S_6489b10_T1,replaced C,"6489c10 -> 6489610 (sdyn sibling, any)"
+S_6489b10_T2,replaced C,"6489c10 -> 6489610 (sdyn sibling, any)"
+,panel2 refill,medium: +1
+,panel2 refill,hard: +2

@@ -1,6 +1,6 @@
 # Task Instructions
 
-<!-- Version instructions_en v1.0, 10 Oct 2026. The question wording in Section 2 is the preregistered English wording (preregistration v1.1, Section 2 / Section 12) and must not be changed. The key bindings in Section 3 must match the implementation in web/; if the application changes, update this text and its version. Drop Section 5 (practice triplets) if the application has no practice phase. -->
+<!-- Version instructions_en v1.1, 14 Oct 2026 (sentence on near-static control scenes added).The question wording in Section 2 is the preregistered English wording (preregistration v1.1, Section 2 / Section 12) and must not be changed. The key bindings in Section 3 must match the implementation in web/; if the application changes, update this text and its version. Drop Section 5 (practice triplets) if the application has no practice phase. -->
 
 ## 1. What you will see
 
@@ -50,6 +50,7 @@ Recommendation: let the videos run through at least once (a few seconds) and the
 - A session has **{{N_TRIALS}} trials**. The counter at the top shows how many remain.
 - {{BREAK_SENTENCE}}
 - Some triplets are **repeated** during the session, possibly with the sides swapped. This is intentional. Do not try to remember what you answered before; always answer according to your current impression.
+- Some clips **hardly move at all**. This is intentional — they are control scenes. Judge them like all the others: by their overall character, including the fact that they hardly move.
 - For some triplets the answer will seem **obvious**. These triplets are part of the task too; answer them in the same way as the others.
 - Individual trials have no time limit. If you need to stop, close the window; an unfinished session is not counted and you may start a new one (at most two sessions in total).
 - Do not resize the window or switch to other applications during the session; the videos might stop. If a video does not play, the application records this — continue with the trial, or skip it with the "Playback problem" button [DEV NOTE: remove this sentence if the button is not implemented].
