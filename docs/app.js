@@ -74,6 +74,7 @@
   function sleep(ms) { return new Promise(function (res) { setTimeout(res, ms); }); }
   function escapeHtml(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
   function mdToHtml(md) {
+    md = md.replace(/<!--[\s\S]*?-->/g, "");
     var lines = md.replace(/\r/g, "").split("\n"), out = [], para = [], inList = null;
     function flushPara() { if (para.length) { out.push("<p>" + inline(para.join(" ")) + "</p>"); para = []; } }
     function closeList() { if (inList) { out.push("</" + inList + ">"); inList = null; } }
@@ -351,7 +352,11 @@
     S.nextPromise = Promise.resolve(prepareTrial(S.practice[0]));
     nextPractice();
   }
-  function practiceDone() { $("progress-wrap").classList.add("hidden"); show("screen-practice-done"); }
+  function practiceDone() {
+    $("progress-wrap").classList.add("hidden");
+    $("screen-practice-done").querySelector('[data-i18n="practice_done_text"]').textContent = t("practice_done_text");
+    show("screen-practice-done");
+  }
   function nextPractice() {
     var old = S.cur;
     if (S.pIdx >= S.practice.length) { destroyTrial(old); S.cur = null; return practiceDone(); }
@@ -410,6 +415,7 @@
     $("completion-code").textContent = "…";
     $("observer-code-end").textContent = S.observer_id || "—";
     $("end-note").textContent = t("end_pending");
+    $("debrief-text").classList.add("hidden");
     sha256hex(S.session_id + "|" + S.plan_id).then(function (h) {
       var code = h ? "HAT-" + h.slice(0, 4).toUpperCase() + "-" + h.slice(4, 8).toUpperCase() : "HAT-" + S.session_id.slice(-8).toUpperCase();
       S.completion_code = code;
@@ -421,6 +427,7 @@
     }).then(function () {
       $("completion-code").textContent = S.completion_code;
       $("end-note").textContent = t("end_done");
+      $("debrief-text").classList.remove("hidden");
       S.parts.done[S.study] = (S.parts.done[S.study] || 0) + 1;
       var other = otherStudy(S.study);
       if (S.choice === "both" && S.parts.pending === S.study) { S.parts.pending = null; }

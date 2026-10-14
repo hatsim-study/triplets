@@ -24,6 +24,7 @@ import sys
 JSON_COLS = {"loop_phase_ms", "screen", "flags", "demographics"}
 BOOL_COLS = {"is_repeat", "is_attention", "completed"}
 INT_COLS = {"trial_index", "rt_ms", "panel", "playback_errors", "n_trials_target", "n_trials_done", "session_number_for_observer"}
+IDENTIFIER_COLS = {"session_id", "observer_id", "plan_id", "triplet_id", "anchor_clip", "left_clip", "right_clip", "chosen_clip"}
 
 
 def coerce(row):
@@ -59,6 +60,9 @@ def coerce(row):
                     out[k] = None
                 continue
             out[k] = s
+        elif k in IDENTIFIER_COLS:
+            # Sheets may infer numeric cells for all-digit clip IDs. Identifiers are text.
+            out[k] = str(int(v)) if isinstance(v, float) and v.is_integer() else str(v)
         else:
             out[k] = v
     if "repeat_of_trial_index" in out and out["repeat_of_trial_index"] in ("", None):

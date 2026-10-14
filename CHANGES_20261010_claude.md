@@ -57,3 +57,6 @@ Navržený commit (po commitu travní studie od webového vlákna): "Grass study
 - Obnoveny verze URL JS/CSS pro cache (`20261014-grass`). Nabídka trávy uvádí skutečný rozsah 24–40 úloh; popis smíšené studie nezávisí na právě otevřené části při přepnutí jazyka.
 - Souhlas v1.1: odstraněn rozpor o nepředávání dat třetím stranám versus Google/GitHub hosting; bez nezaručeného tvrzení o zpracování výhradně v EU. Kontakt pověřence opraven na dpo@cvut.cz podle https://www.cvut.cz/ochrana-osobnich-udaju-gdpr. Kontakt řešitele zůstává richtrad@fit.cvut.cz.
 - Technické testy jsou syntetické; lidský travní pilot a posouzení jeho odpovědí se tím nenahrazují.
+
+- Úplný test prohlížečem zachytil starý počet úloh na obrazovce po cvičení; `practiceDone()` nyní znovu vykreslí délku a přestávku podle přiděleného plánu. Text přestávky nepředpokládá, že jde přesně o polovinu.
+- Doplněno při skutečném průchodu: debrief nezobrazuje autorské HTML komentáře, prázdnou variantu odměny ani nevyplněný token kódu. Ukáže se až po potvrzení posledních zápisů. Rozlišen kód pozorovatele pro návrat a kód dokončení pro odvolání dat. Exportér převádí číselně typované identifikátory klipů z Google Tabulek na text; původní surová data nezměněna.

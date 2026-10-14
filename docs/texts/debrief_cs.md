@@ -6,12 +6,7 @@
 
 Dokončil(a) jste sezení. Vaše odpovědi byly uloženy.
 
-**Váš kód dokončení:** `{{completion_code}}`
-
-Kód si prosím uložte (zkopírujte nebo vyfoťte). Slouží ke dvěma účelům:
-
-1. pokud budete chtít své odpovědi nechat smazat, uveďte jej v žádosti (viz níže);
-2.  / [pokud ne, bod vypustit].
+Váš kód dokončení je uveden nad tímto textem. Uložte si jej (zkopírujte nebo vyfoťte); slouží k případné žádosti o smazání odpovědí (viz níže).
 
 ## O co ve studii šlo
 
@@ -29,7 +24,7 @@ Vaše odpovědi jsou uloženy pod náhodným pseudonymním identifikátorem, bez
 
 ## Druhé sezení
 
-Pokud chcete, můžete absolvovat ještě jedno sezení (nejvýše dvě celkem). Použijte stejný prohlížeč a zařízení, nebo při spuštění zadejte výše uvedený kód dokončení, abyste neviděl(a) stejné trojice znovu.
+Limit platí pro každou studii zvlášť: nejvýše dvě sezení na studii, ve smíšeném pilotu pouze jedno. Pokud vám aplikace nabídne další část nebo sezení, použijte stejný prohlížeč a zařízení, nebo při spuštění zadejte výše uvedený kód pozorovatele (`obs_…`). Kód dokončení slouží k odvolání dat.
 
 ## Kontakt
 

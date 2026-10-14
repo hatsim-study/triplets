@@ -6,12 +6,7 @@
 
 You have completed the session. Your responses have been saved.
 
-**Your completion code:** `{{completion_code}}`
-
-Please save the code (copy it or take a photo). It serves two purposes:
-
-1. if you wish to have your responses deleted, quote it in your request (see below);
-2.  / [otherwise delete this item].
+Your completion code is displayed above this text. Save it (copy it or take a photo); use it if you later request deletion of your responses (see below).
 
 ## What the study was about
 
@@ -29,7 +24,7 @@ Your responses are stored under a random pseudonymous identifier, without name, 
 
 ## Second session
 
-If you wish, you may complete one more session (at most two in total). Use the same browser and device, or enter the completion code above when starting, so that you do not see the same triplets again.
+The limit applies separately to each study: at most two sessions per study, but only one for the mixed pilot. If the application offers another part or session, use the same browser and device, or enter the observer code (`obs_…`) displayed above. The completion code is used to withdraw your data.
 
 ## Contact
 
